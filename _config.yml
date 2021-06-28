@@ -82,13 +82,13 @@ analytics:
 author:
   name             : "Ivan Gordeev"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
-  employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  bio              : "Junior Researcher at Joint Institute for Nuclear Research"
+  location         : "Dubna, Russia"
+  employer         : "Joint Institute for Nuclear Research"
+  pubmed           : 
+  googlescholar    : 
+  email            : "gordeev@jinr.ru"
+  researchgate     : "https://www.researchgate.net/profile/Ivan-Gordeev"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,14 +96,14 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "GordoNice"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "https://www.instagram.com/gordonnice"
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0000-0003-3120-3401"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -255,7 +255,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Moscow # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
