@@ -81,8 +81,8 @@ analytics:
 # Site Author
 author:
   name             : "Ivan Gordeev"
-  avatar           : "profile.png"
-  bio              : "Junior Researcher at Joint Institute for Nuclear Research"
+  avatar           : "profile.jpg"
+  bio              : "Junior Researcher at Joint Institute for Nuclear Research, Laboratory of Radiation Biology"
   location         : "Dubna, Russia"
   employer         : "Joint Institute for Nuclear Research"
   pubmed           : 
@@ -99,7 +99,7 @@ author:
   github           : "GordoNice"
   google_plus      :
   keybase          :
-  instagram        : "https://www.instagram.com/gordonnice"
+  instagram        : "gordonnice"
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : "Ivan34706278"
   vine             :
   weibo            :
   xing             :
