@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ivan Gordeev"
+title                    : "Ivan Gordeev / Personal Page"
 title_separator          : "-"
 name                     : &name "Ivan Gordeev"
 description              : &description "Junior Researcher at Joint Institute for Nuclear Research"
