@@ -1,2 +1,7 @@
 _site/
 .idea/
+/markdown_generator/pubs.bib
+/markdown_generator/pubs.bib.bak
+/markdown_generator/.ipynb_checkpoints/PubsFromBib-checkpoint.ipynb
+/markdown_generator/pubs.bib.sav
+/markdown_generator/.ipynb_checkpoints/publications-checkpoint.ipynb
