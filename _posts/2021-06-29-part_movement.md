@@ -1,14 +1,19 @@
 ---
 title: 'Movement of particle in electromagnetic field'
-date: 2021-06-29
+date: 2021-06-16
 permalink: /posts/2021/06/part_movement/
 tags:
+  - physics
   - visualization
   - glowscript
+  - vpython
+  - lecture
 ---
 
-Visualization for lecture with movement of particle in electromagnetic field
+This visualization was done as an illustrative material for lecture on the
+"Physics and Technology of Accelerators" at Dubna State University. Coded with
+[VPython](https://vpython.org/) and powered by [GlowScript](https://www.glowscript.org).
 
-[Direct link](https://www.glowscript.org/#/user/Gordonice/folder/PhysTechAccelLections/program/Lec01pipe)
+[Direct link to GlowScript with program](https://www.glowscript.org/#/user/Gordonice/folder/PhysTechAccelLections/program/Lec01pipe)
 
 <iframe src="/files/glowscript/Lec01pipe.html" style="width: 100%; height: 1000px;border: none;"></iframe>
