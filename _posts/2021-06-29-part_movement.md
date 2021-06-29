@@ -3,9 +3,8 @@ title: 'Movement of particle in electromagnetic field'
 date: 2021-06-29
 permalink: /posts/2021/06/part_movement/
 tags:
-  - cool posts
-  - category1
-  - category2
+  - visualization
+  - glowscript
 ---
 
 # Glow script visualizations
