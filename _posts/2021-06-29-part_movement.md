@@ -5,8 +5,9 @@ permalink: /posts/2021/06/part_movement/
 tags:
   - visualization
   - glowscript
-  - test
 ---
+
+Visualization for lecture with movement of particle in electromagnetic field
 
 [Direct link](https://www.glowscript.org/#/user/Gordonice/folder/PhysTechAccelLections/program/Lec01pipe)
 
