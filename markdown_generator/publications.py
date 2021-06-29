@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 # coding: utf-8
 
 # # Publications markdown generator for academicpages
@@ -104,5 +104,5 @@ for row, item in publications.iterrows():
        
     with open("../_publications/" + md_filename, 'w') as f:
         f.write(md)
-
+    print('holla')
 
