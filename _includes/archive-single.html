@@ -55,8 +55,8 @@
     {% if post.authors and post.abstract %}
       <p><b>List of authors:</b> {{ post.authors }} </p>
       <p><b>Abstract:</b> {{ post.abstract }} </p>
-    {% elsif post.citation %}
-      <p>Recommended citation: {{ post.citation }} </p>
+    {% elsif post.authors %}
+      <p><b>List of authors:</b> {{ post.authors }} </p>
     {% elsif post.paperurl %}
       <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
     {% endif %}
