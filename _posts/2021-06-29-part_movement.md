@@ -1,5 +1,5 @@
 ---
-title: 'Movement of particle in electromagnetic field'
+title: 'Movement of a charged particle in electromagnetic field'
 date: 2021-06-16
 permalink: /posts/2021/06/part_movement/
 tags:
