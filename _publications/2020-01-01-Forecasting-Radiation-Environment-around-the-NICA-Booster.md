@@ -5,6 +5,6 @@ permalink: /publication/2020-01-01-Forecasting-Radiation-Environment-around-the-
 date: 2020-01-01
 venue: 'Physics of Particles and Nuclei Letters'
 paperurl: 'https://doi.org/10.1134/S1547477120030152'
-citation: ' G. Timoshenko,  I. Gordeev, &quot;Forecasting Radiation Environment around the NICA Booster.&quot; Physics of Particles and Nuclei Letters, 2020.'
+authors: 'G. Timoshenko, I. Gordeev'
 ---
 [Access paper here](https://doi.org/10.1134/S1547477120030152){:target="_blank"}
