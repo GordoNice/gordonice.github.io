@@ -21,7 +21,8 @@ for this purpose I use Python. I also have skills to work with
 and some experience with C++ and Fortran languages.
 
 On this website you can find comprehensive information about me:
-[list of publications](), [CV](), [posts with some projects]().
+[list of publications](https://gordonice.github.io/publications/),
+[CV](https://gordonice.github.io/cv/), [posts with some projects](https://gordonice.github.io/posts/).
 
 If you have any additional questions, please feel free to contact me by email
 or on the social network. 
