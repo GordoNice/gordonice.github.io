@@ -7,8 +7,6 @@ tags:
   - glowscript
 ---
 
-# Glow script visualizations
-
 ## Visualization for lecture 1 (Movement of particle in electromagnetic field)
 
 [Direct link](https://www.glowscript.org/#/user/Gordonice/folder/PhysTechAccelLections/program/Lec01pipe)
