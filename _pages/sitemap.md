@@ -11,7 +11,7 @@ A list of all the posts and pages found on the site. For you robots out there is
 
 <h2>Pages</h2>
 {% for post in site.pages %}
-  {% if post.title != "Teaching" and post.title != "Talks and presentations" and post.title != "Portfolio" and post.title != "Jupyter notebook markdown generator"%}
+  {% if post.title != "Teaching" and post.title != "Talks and presentations" and post.title != "Portfolio" and post.title != "Jupyter notebook markdown generator" and post.title != "Page Archive" %}
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
