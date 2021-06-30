@@ -24,8 +24,8 @@ $$\vec{F}=\frac{d\vec{p}}{dt}=\vec{F}_{\text{el.}}+\vec{F}_{\text{mag.}}=Q\vec{E
 In the program you can control parameters from formula and check what changes.
 
 Thus, in order to act on a moving charged particle, a force $\vec{F}$. The first
-component ($\vec{F}_{\text{el.}}$) sets the action from the electric field, the
-second ($\vec{F}_{\text{mag.}}$) --- represents the strength of the magnetic field.
+component ($\vec{F}\_{\text{el.}}$) sets the action from the electric field, the
+second ($\vec{F}\_{\text{mag.}}$) --- represents the strength of the magnetic field.
 
 The electric field accelerates (or slows down) the movement of the particle,
 while the magnetic field only changes the direction of movement.
