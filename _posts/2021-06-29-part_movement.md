@@ -19,11 +19,11 @@ This visualization was done as an illustrative material for lecture on the
 The control of the motion of a charged particle in electric and magnetic fields
 is described by the following formula:
 
-$$\vec{F}=\frac{d\vec{p}}{dt}=\vec{F}_{\text{эл.}}+\vec{F}_{\text{маг.}}=Q\vec{E}+Q[\vec{v}, {\vec{B}}]$$
+$$\vec{F}=\frac{d\vec{p}}{dt}=\vec{F}_{\text{el.}}+\vec{F}_{\text{mag.}}=Q\vec{E}+Q[\vec{v}, {\vec{B}}]$$
 
 In the program you can control parameters from formula and check what changes.
 
-Try this out below or on a GlowScript site!
+Try this out on a GlowScript site or right here below!
 
 [Direct link to GlowScript site with the program](https://www.glowscript.org/#/user/Gordonice/folder/PhysTechAccelLections/program/Lec01pipe)
 
