@@ -9,8 +9,8 @@ main:
   - title: "Blog Posts"
     url: /posts/
 
-  - title: "FitsGeo"
-    url: /fitsgeo/
+#   - title: "Talks"
+#     url: /talks/
 
 #   - title: "Teaching"
 #     url: /teaching/
