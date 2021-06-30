@@ -6,12 +6,12 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 #remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrastPermalink" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "Ivan Gordeev"
-title_separator          : "-"
+title_separator          : "|"
 name                     : &name "Ivan Gordeev"
 description              : &description "Junior Researcher at Joint Institute for Nuclear Research"
 url                      : https://ivangordeev.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
