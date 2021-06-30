@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation Guide &#8212; FitsGeo 1.0.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="_static/contentui.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/contentui.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]]}})</script>
+    <link rel="shortcut icon" href="_static/favicon.svg"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="User’s Guide" href="user_guide.html" />
+    <link rel="prev" title="Getting Started" href="getting_started.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="index.html">
+    <img class="logo" src="_static/logo.svg" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+<p class="blurb">Python package for PHITS geometry development and visualization</p>
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites-python-interpreter">Prerequisites — Python interpreter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#python-3-installation">Python 3 installation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites-pip-tool">Prerequisites — pip tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pip-installation">pip installation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-fitsgeo-via-pip">Installation FitsGeo via pip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-fitsgeo-via-github">Getting FitsGeo via GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-fitsgeo-examples">Getting FitsGeo examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide.html">User’s Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material.html">Predefined Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="installation-guide">
+<h1>Installation Guide<a class="headerlink" href="#installation-guide" title="Permalink to this headline">¶</a></h1>
+<p><strong>FitsGeo</strong> works under any operating system with <strong>Python 3</strong> interpreter and <strong>pip</strong> tool.</p>
+<p>If you are familiar with Python and pip tool, simply type following command to install the FitsGeo package:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install fitsgeo
+</pre></div>
+</div>
+<p>or:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip3 install fitsgeo
+</pre></div>
+</div>
+<p>If you have both Python 2 and Python 3 versions.</p>
+<p>If you are a less advanced user, read the rest of the page.</p>
+<p>Installation guide is divided in two parts: prerequisites (mainly Python installation) and main package installation.</p>
+<div class="section" id="prerequisites-python-interpreter">
+<h2>Prerequisites — Python interpreter<a class="headerlink" href="#prerequisites-python-interpreter" title="Permalink to this headline">¶</a></h2>
+<p>First user need to check if Python interpreter is already installed. Try if one of the following commands (printing Python version) works:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python --version
+$ python3 --version
+</pre></div>
+</div>
+<p>Command <code class="docutils literal notranslate"><span class="pre">python</span></code> invokes either Python 2 or 3, while <code class="docutils literal notranslate"><span class="pre">python3</span></code> invokes only Python 3.</p>
+<p><strong>FitsGeo</strong> supports only modern Python 3 versions starting from <em>version 3.7</em>. Please check if interpreter version is supported.</p>
+<p>If none of <code class="docutils literal notranslate"><span class="pre">python</span></code> and <code class="docutils literal notranslate"><span class="pre">python3</span></code> commands are present, then Python interpreter has to be installed. It is better to use the newest available version.</p>
+<div class="section" id="python-3-installation">
+<h3>Python 3 installation<a class="headerlink" href="#python-3-installation" title="Permalink to this headline">¶</a></h3>
+<p>The best way to install Python under Linux is to use package manager:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">python3</span></code> for Debian and Ubuntu</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dnf</span> <span class="pre">install</span> <span class="pre">python3</span></code> for Fedora</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">yum</span> <span class="pre">install</span> <span class="pre">python3</span></code> for CentOS and SLC</p></li>
+</ul>
+<p>On some systems instructions mentioned above have to be prefixed with <code class="docutils literal notranslate"><span class="pre">sudo</span></code> command.</p>
+<p>For Windows or macOS please visit official <a class="reference external" href="https://www.python.org/">Python webpage</a> for installation instructions.</p>
+</div>
+</div>
+<div class="section" id="prerequisites-pip-tool">
+<h2>Prerequisites — pip tool<a class="headerlink" href="#prerequisites-pip-tool" title="Permalink to this headline">¶</a></h2>
+<p><strong>pip</strong> is a tool for installing and managing Python packages. This tool automatically downloads the packages from central Internet repository and installs them.</p>
+<p>Try the following commands (printing pip version) in console, to make sure that pip tool is installed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip --version
+$ pip3 --version
+</pre></div>
+</div>
+<p>In a similar way to Python interpreter pip is a tool for Python 2 or 3, while pip3 works exclusively for Python 3. If none of these commands are present, then pip has to be installed.</p>
+<div class="section" id="pip-installation">
+<h3>pip installation<a class="headerlink" href="#pip-installation" title="Permalink to this headline">¶</a></h3>
+<p>Follow the package installation for your Linux system. On some systems instructions mentioned below have to be prefixed with <code class="docutils literal notranslate"><span class="pre">sudo</span></code> command:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">python3-pip</span></code> for Debian and Ubuntu</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dnf</span> <span class="pre">install</span> <span class="pre">python3-pip</span></code> for Fedora</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">yum</span> <span class="pre">install</span> <span class="pre">python3-pip</span></code> for CentOS and SLC</p></li>
+</ul>
+<p>For Windows and macOS please visit official <a class="reference external" href="https://www.python.org/">Python webpage</a> for installation instructions.</p>
+</div>
+</div>
+<div class="section" id="installation-fitsgeo-via-pip">
+<h2>Installation FitsGeo via pip<a class="headerlink" href="#installation-fitsgeo-via-pip" title="Permalink to this headline">¶</a></h2>
+<p>After you get Python and pip tool <strong>FitsGeo</strong> package can be installed. On some systems commands mentioned below have to be prefixed with <code class="docutils literal notranslate"><span class="pre">sudo</span></code> command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install fitsgeo
+</pre></div>
+</div>
+<p>To upgrade the <strong>FitsGeo</strong> to newer version, simply type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install --upgrade fitsgeo
+</pre></div>
+</div>
+<p>To completely remove <strong>FitsGeo</strong> from your system, use following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip uninstall fitsgeo
+</pre></div>
+</div>
+<p>Now <strong>FitsGeo</strong> package should be installed for all users and can be invoked in Python script by typing:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">fitsgeo</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="getting-fitsgeo-via-github">
+<h2>Getting FitsGeo via GitHub<a class="headerlink" href="#getting-fitsgeo-via-github" title="Permalink to this headline">¶</a></h2>
+<p>Alternative way of getting <strong>FitsGeo</strong> is to clone repository from <a class="reference external" href="https://github.com/GordoNice/fitsgeo">GitHub</a>.</p>
+<p><strong>FitsGeo</strong> can be downloaded directly from github webpage using the web browser or via command line:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/GordoNice/fitsgeo.git
+</pre></div>
+</div>
+<p>Make sure that <a class="reference external" href="https://git-scm.com//">git</a> is installed.</p>
+<p>Now one can use FitsGeo from root directory, or, <strong>FitsGeo</strong> can be installed from command line from root directory via pip:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install .
+</pre></div>
+</div>
+<p>Still, it is recommended to use installation using pip tool, described above. It makes it easy upgrade and uninstallation procedures.</p>
+</div>
+<div class="section" id="getting-fitsgeo-examples">
+<h2>Getting FitsGeo examples<a class="headerlink" href="#getting-fitsgeo-examples" title="Permalink to this headline">¶</a></h2>
+<p>All scripts with examples located in <code class="docutils literal notranslate"><span class="pre">examples</span></code> directory of <a class="reference external" href="https://github.com/GordoNice/fitsgeo">GitHub FitsGeo repository</a>. Detailed explanation of examples’ code provided in <a class="reference external" href="user_guide.html">User’s Guide</a>.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &copy;2020, Ivan Gordeev.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/install.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

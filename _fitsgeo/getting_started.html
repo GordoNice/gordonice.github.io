@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started &#8212; FitsGeo 1.0.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="_static/contentui.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/contentui.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]]}})</script>
+    <link rel="shortcut icon" href="_static/favicon.svg"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation Guide" href="install.html" />
+    <link rel="prev" title="FitsGeo Documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="index.html">
+    <img class="logo" src="_static/logo.svg" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+<p class="blurb">Python package for PHITS geometry development and visualization</p>
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quick-installation-guide">Quick installation guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-fitsgeo">Using FitsGeo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#known-bugs">Known bugs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#future-development">Future development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#support">Support</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide.html">User’s Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material.html">Predefined Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p class="rubric">Brief overview of FitsGeo: how to install and use</p>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/GordoNice/fitsgeo/">FitsGeo</a> is a Python package that simplifies the most time-consuming part of the work associated with developing geometry in the Monte Carlo (MC) particle transport code <a class="reference external" href="https://phits.jaea.go.jp/">PHITS</a>, other codes such as MCNP, FLUKA, may be added in future releases. To start MC calculations user need to create so-called input file for <strong>PHITS</strong> code and default way of creation geometry section in this input file may be a bit difficult especially with complicated geometry cases. Also, visualization of created geometry in PHITS is limited to only 2D non-interactive representation which makes process of geometry construction way more difficult. <strong>FitsGeo</strong> simplifies this process, user can define geometry surfaces as Python objects with all coming benefits of object-oriented programming paradigm. The part related to visualization in FitsGeo is based on <a class="reference external" href="https://vpython.org/">VPython</a>, this way, all defined surfaces in user geometry are represented in 3D and can be viewed in browser from any side interactively. In addition to surfaces, user can also define objects for other sections (materials and cells).</p>
+<p><strong>FitsGeo</strong> provides bunch of modules dedicated to generation of certain sections of PHITS input files. Being Python package, <strong>FitsGeo</strong> works under any operating system — only Python 3 interpreter with additional modules have to be installed. Very basic skills in programming with Python required to start. <strong>FitsGeo</strong> package provides bunch of usage examples, therefore, even for the new Python user it will be easy to develop their own geometries for future research.</p>
+</div>
+<div class="section" id="quick-installation-guide">
+<h2>Quick installation guide<a class="headerlink" href="#quick-installation-guide" title="Permalink to this headline">¶</a></h2>
+<p>Install latest Python 3 interpreter and pip tool, then type in console:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install fitsgeo
+</pre></div>
+</div>
+<p>or:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip3 install fitsgeo
+</pre></div>
+</div>
+<p>This command will automatically download package and all dependencies. For more detailed installation guide please take a look at <a class="reference external" href="install.html">Installation Guide</a>.</p>
+</div>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<p>Additional modules for FitsGeo use (automatically installed via pip tool):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">vpython&gt;=7.6.1</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">numpy&gt;=1.16.2</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">scipy&gt;=1.2.2</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pandas&gt;=0.25.1</span></code></p></li>
+</ul>
+<p>List with all modules in <a class="reference external" href="https://github.com/GordoNice/fitsgeo/blob/master/requirements.txt">requirements.txt</a>.</p>
+</div>
+<div class="section" id="using-fitsgeo">
+<h2>Using FitsGeo<a class="headerlink" href="#using-fitsgeo" title="Permalink to this headline">¶</a></h2>
+<p>After package is installed, user need to create his own Python file <code class="docutils literal notranslate"><span class="pre">example.py</span></code> and import FitsGeo package:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">fitsgeo</span>
+</pre></div>
+</div>
+<p>After that, FitsGeo can be used. To create scene for future geometry type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scene</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">create_scene</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This will create basic VPython canvas with some default settings, these settings may be configured right when function is called:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scene</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">create_scene</span><span class="p">(</span><span class="n">background</span><span class="o">=</span><span class="n">fitsgeo</span><span class="o">.</span><span class="n">GRAY</span><span class="p">,</span> <span class="n">ax_length</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This will configure background to be gray and axes length equal to 5 cm. Take a look at <a class="reference external" href="user_guide.html">User’s Guide</a> for additional parameters of <code class="docutils literal notranslate"><span class="pre">create_scene</span></code> function and for other functions and objects below.</p>
+<p>To create materials from predefined databases:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">poly</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">Material</span><span class="o">.</span><span class="n">database</span><span class="p">(</span><span class="s2">&quot;MAT_POLYETHYLENE&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;purple&quot;</span><span class="p">)</span>
+<span class="c1"># ... similar way to create more materials</span>
+</pre></div>
+</div>
+<p>To use predefined materials user need to be sure that provided material name is in the list. All predefined materials can be listed in console:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Prints name of every material from databases</span>
+<span class="n">fitsgeo</span><span class="o">.</span><span class="n">list_all_materials</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Also, all predefined materials listed in the <a class="reference external" href="material.html">Predefined Materials</a> section. Therefore, it is recommended to search suitable materials on this page.</p>
+<p>Another way to define material is to create material manually:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">poly</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">Material</span><span class="p">(</span>
+        <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">]],</span>
+        <span class="n">density</span><span class="o">=</span><span class="mf">0.94</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Polyethylene&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;purple&quot;</span><span class="p">)</span>
+<span class="c1"># ... similar way to create more materials</span>
+</pre></div>
+</div>
+<p>In addition to listed materials in databases, FisGeo has 3 predefined in <code class="docutils literal notranslate"><span class="pre">material</span></code> module materials:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Special material for outer void</span>
+<span class="n">MAT_OUTER</span> <span class="o">=</span> <span class="n">Material</span><span class="p">([],</span> <span class="n">matn</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Special material for void (vacuum)</span>
+<span class="n">MAT_VOID</span> <span class="o">=</span> <span class="n">Material</span><span class="p">([],</span> <span class="n">matn</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
+
+<span class="c1"># Default material for surfaces and cells</span>
+<span class="n">MAT_WATER</span> <span class="o">=</span> <span class="n">Material</span><span class="o">.</span><span class="n">database</span><span class="p">(</span><span class="s2">&quot;MAT_WATER&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To create surface objects:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create sphere with default parameters</span>
+<span class="n">sphere</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">SPH</span><span class="p">()</span>
+
+<span class="c1"># Sphere at (0, 0, 0) with R = 5 and predefined void material (for inner/outer boundary)</span>
+<span class="n">outer_sphere</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">SPH</span><span class="p">(</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="mi">5</span><span class="p">,</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Outer&quot;</span><span class="p">,</span> <span class="n">material</span><span class="o">=</span><span class="n">fitsgeo</span><span class="o">.</span><span class="n">MAT_VOID</span><span class="p">)</span>
+
+<span class="c1"># Box at (1, 1, 1) base point with side equal to 1 cm and Polyethylene material</span>
+<span class="n">box</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">BOX</span><span class="p">(</span>
+        <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Box&quot;</span><span class="p">,</span> <span class="n">material</span><span class="o">=</span><span class="n">poly</span><span class="p">)</span>
+<span class="c1"># ...</span>
+</pre></div>
+</div>
+<p>To create cell objects:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Outer space definition</span>
+<span class="n">outer_c</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">Cell</span><span class="p">([</span><span class="o">+</span><span class="n">outer_sphere</span><span class="p">],</span> <span class="s2">&quot;Outer Void&quot;</span><span class="p">,</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">MAT_OUTER</span><span class="p">)</span>
+
+<span class="c1"># Inner part of sphere</span>
+<span class="n">sphere_c</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">Cell</span><span class="p">([</span><span class="o">-</span><span class="n">sphere</span><span class="p">],</span> <span class="s2">&quot;Sphere Cell&quot;</span><span class="p">,</span> <span class="n">sphere</span><span class="o">.</span><span class="n">material</span><span class="p">)</span>
+
+<span class="c1"># Inner part of box</span>
+<span class="n">box_c</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">Cell</span><span class="p">([</span><span class="o">-</span><span class="n">box</span><span class="p">],</span> <span class="s2">&quot;Box Cell&quot;</span><span class="p">,</span> <span class="n">poly</span><span class="p">)</span>
+
+<span class="c1"># Cell which contains all surfaces inside</span>
+<span class="n">void_c</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">Cell</span><span class="p">(</span>
+        <span class="p">[</span><span class="o">-</span><span class="n">outer_sphere</span> <span class="o">+</span> <span class="o">+</span><span class="n">box</span> <span class="o">+</span> <span class="o">+</span><span class="n">sphere</span><span class="p">],</span> <span class="s2">&quot;Void Cell&quot;</span><span class="p">,</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">MAT_VOID</span><span class="p">)</span>
+<span class="c1"># ...</span>
+</pre></div>
+</div>
+<p>To draw these objects on scene:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphere</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">label_center</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">box</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">label_base</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">outer_sphere</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+<span class="c1"># ...</span>
+</pre></div>
+</div>
+<p>Special drawing parameters (e. g. <code class="docutils literal notranslate"><span class="pre">label_center</span></code>, <code class="docutils literal notranslate"><span class="pre">label_base</span></code>) may be provided to generate label pointing on the object’s center or on the base point.</p>
+<div class="align-center figure" id="id3">
+<img alt="_images/fitsgeo_getting.png" src="_images/fitsgeo_getting.png" />
+<p class="caption"><span class="caption-text"><strong>Visualization of geometry in FitsGeo</strong></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>Export to PHITS:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fitsgeo</span><span class="o">.</span><span class="n">phits_export</span><span class="p">()</span>  <span class="c1"># Only console output</span>
+</pre></div>
+</div>
+<p>For saving in file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fitsgeo</span><span class="o">.</span><span class="n">phits_export</span><span class="p">(</span><span class="n">to_file</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inp_name</span><span class="o">=</span><span class="s2">&quot;example&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Additional flags can be provided to export only certain sections. Take a look at <a class="reference external" href="user_guide.html">User’s Guide</a> for additional flags.</p>
+<div class="toggle-header docutils container">
+<p><strong>Full code for example</strong></p>
+</div>
+<div class="toggle-content docutils container">
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">fitsgeo</span>
+
+<span class="c1"># Create scene with some settings</span>
+<span class="c1"># scene = fitsgeo.create_scene()</span>
+<span class="n">scene</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">create_scene</span><span class="p">(</span><span class="n">background</span><span class="o">=</span><span class="n">fitsgeo</span><span class="o">.</span><span class="n">GRAY</span><span class="p">,</span> <span class="n">ax_length</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># poly = fitsgeo.Material.database(&quot;MAT_POLYETHYLENE&quot;, color=&quot;purple&quot;)</span>
+<span class="c1"># To list all materials in databases</span>
+<span class="c1"># fitsgeo.list_all_materials()</span>
+
+<span class="c1"># To create material manually</span>
+<span class="n">poly</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">Material</span><span class="p">(</span>
+                <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">]],</span>
+                <span class="n">density</span><span class="o">=</span><span class="mf">0.94</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Polyethylene&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;purple&quot;</span><span class="p">)</span>
+<span class="c1"># ... create more materials in similar way</span>
+
+<span class="c1"># Access to special material for outer void</span>
+<span class="c1"># fitsgeo.MAT_OUTER</span>
+
+<span class="c1"># Access to special material for void (vacuum)</span>
+<span class="c1"># fitsgeo.MAT_VOID</span>
+
+<span class="c1"># Access to special material for surfaces and cells</span>
+<span class="c1"># fitsgeo.MAT_WATER</span>
+
+<span class="c1"># Create sphere with default parameters</span>
+<span class="n">sphere</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">SPH</span><span class="p">()</span>
+
+<span class="c1"># Sphere at (0, 0, 0) with R = 5 and predefined void material (for inner/outer boundary)</span>
+<span class="n">outer_sphere</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">SPH</span><span class="p">(</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="mi">5</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Outer&quot;</span><span class="p">,</span> <span class="n">material</span><span class="o">=</span><span class="n">fitsgeo</span><span class="o">.</span><span class="n">MAT_VOID</span><span class="p">)</span>
+
+<span class="c1"># Box at (1, 1, 1) base point with side equal to 1 cm and Polyethylene material</span>
+<span class="n">box</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">BOX</span><span class="p">(</span>
+        <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Box&quot;</span><span class="p">,</span> <span class="n">material</span><span class="o">=</span><span class="n">poly</span><span class="p">)</span>
+<span class="c1"># ...</span>
+
+<span class="c1"># Outer space definition</span>
+<span class="n">outer_c</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">Cell</span><span class="p">([</span><span class="o">+</span><span class="n">outer_sphere</span><span class="p">],</span> <span class="s2">&quot;Outer Void&quot;</span><span class="p">,</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">MAT_OUTER</span><span class="p">)</span>
+
+<span class="c1"># Inner part of sphere</span>
+<span class="n">sphere_c</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">Cell</span><span class="p">([</span><span class="o">-</span><span class="n">sphere</span><span class="p">],</span> <span class="s2">&quot;Sphere Cell&quot;</span><span class="p">,</span> <span class="n">sphere</span><span class="o">.</span><span class="n">material</span><span class="p">)</span>
+
+<span class="c1"># Inner part of box</span>
+<span class="n">box_c</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">Cell</span><span class="p">([</span><span class="o">-</span><span class="n">box</span><span class="p">],</span> <span class="s2">&quot;Box Cell&quot;</span><span class="p">,</span> <span class="n">poly</span><span class="p">)</span>
+
+<span class="c1"># Cell which contains all surfaces inside</span>
+<span class="n">void_c</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">Cell</span><span class="p">(</span>
+        <span class="p">[</span><span class="o">-</span><span class="n">outer_sphere</span> <span class="o">+</span> <span class="o">+</span><span class="n">box</span> <span class="o">+</span> <span class="o">+</span><span class="n">sphere</span><span class="p">],</span> <span class="s2">&quot;Void Cell&quot;</span><span class="p">,</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">MAT_VOID</span><span class="p">)</span>
+<span class="c1"># ...</span>
+
+<span class="c1"># Draw all surfaces</span>
+<span class="n">sphere</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">label_center</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">box</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">label_base</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">outer_sphere</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>  <span class="c1"># Almost fully transparent</span>
+<span class="c1"># ...</span>
+
+<span class="c1"># Export of defined sections to PHITS</span>
+<span class="n">fitsgeo</span><span class="o">.</span><span class="n">phits_export</span><span class="p">(</span><span class="n">to_file</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inp_name</span><span class="o">=</span><span class="s2">&quot;example&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<p>That’s it! File  <code class="docutils literal notranslate"><span class="pre">example_FitsGeo.inp</span></code> is generated in your current directory. Now user can paste created sections from generated file to the PHITS input and visualize geometry using standard ANGEL tool in PHITS.</p>
+<div class="toggle-header docutils container">
+<p><strong>Exported PHITS sections</strong></p>
+</div>
+<div class="toggle-content docutils container">
+<blockquote>
+<div><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[ Material ]
+    mat[1] H 2.0 O 1.0  GAS=0 $ name: &#39;MAT_WATER&#39;
+    mat[2] C 2 H 4  GAS=0 $ name: &#39;Polyethylene&#39;
+
+[ Mat Name Color ]
+        mat     name    size    color
+        1       {MAT\_WATER}    1.00    blue
+        2       {Polyethylene}  1.00    purple
+
+[ Surface ]
+    1   SPH  0.0 0.0 0.0  1.0 $ name: &#39;SPH&#39; (sphere) x0 y0 z0 R
+    2   SPH  0 0 0  5 $ name: &#39;Outer&#39; (sphere) x0 y0 z0 R
+    3   BOX  1 1 1  1 0 0  0 1 0  0 0 1 $ name: &#39;Box&#39; (box, all angles are 90deg) [x0 y0 z0] [Ax Ay Az] [Bx By Bz] [Cx Cy Cz]
+
+[ Cell ]
+    100 -1  (2) $ name: &#39;Outer Void&#39;
+
+    101 1  1.0  (-1)   $ name: &#39;Sphere Cell&#39;
+    102 2  0.94  (-3)   $ name: &#39;Box Cell&#39;
+    103 0  (-2 3 1) $ name: &#39;Void Cell&#39;
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="align-center figure" id="id4">
+<img alt="_images/example_3D.png" src="_images/example_3D.png" />
+<p class="caption"><span class="caption-text"><strong>Result plotted with ANGEL in PHITS</strong></span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p>For more detailed instructions with more examples please take a look at <a class="reference external" href="user_guide.html">User’s Guide</a>.</p>
+</div>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Great visualization capabilities involving VPython</p></li>
+<li><p>Easy geometry setup as Python objects</p></li>
+<li><p>Python and the OOP paradigm allow more flexibility while geometry development</p></li>
+<li><p>Access to additional properties for every type of defined surface (volume, area, etc)</p></li>
+<li><p>Databases with 500+ predefined materials</p></li>
+<li><p>Export of defined objects as sections of PHITS input file</p></li>
+</ul>
+</div>
+<div class="section" id="known-bugs">
+<h2>Known bugs<a class="headerlink" href="#known-bugs" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Truncated cone sometimes not stable in visualization, this behaviour will be fixed in the future, use <code class="docutils literal notranslate"><span class="pre">truncated=False</span></code> to avoid problem</p></li>
+<li><p>Semi-major and semi-minor axes for REC object have only magnitude meaning (direction of these vectors is meaningless)</p></li>
+</ul>
+</div>
+<div class="section" id="future-development">
+<h2>Future development<a class="headerlink" href="#future-development" title="Permalink to this headline">¶</a></h2>
+<p>Current version is still raw and more features will come in the near future:</p>
+<ul class="simple">
+<li><p>Other sections to PHITS export (source definition, tally definition, etc)</p></li>
+<li><p>Export to other codes (MCNP, FLUKA)</p></li>
+<li><p>Transformations for objects</p></li>
+</ul>
+</div>
+<div class="section" id="support">
+<h2>Support<a class="headerlink" href="#support" title="Permalink to this headline">¶</a></h2>
+<p>Feel free to submit any bugs or suggestions via <a class="reference external" href="https://github.com/GordoNice/fitsgeo/issues">issues on GitHub</a>.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &copy;2020, Ivan Gordeev.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/getting_started.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
