@@ -14,7 +14,7 @@ text editors Sublime.
 
 It looks like this:
 
-<a href="https://github.com/GordoNice/phits_sublime_support" rel="Sublime Highlight for PHITS input files ">![](https://github.com/GordoNice/phits_sublime_support/blob/master/Screenshot.png)</a>
+<a href="https://github.com/GordoNice/phits_sublime_support" rel="Sublime Highlight for PHITS input files ">![](https://raw.githubusercontent.com/GordoNice/phits_sublime_support/master/Screenshot.png)</a>
 
 It also makes it possible to use Sublime `build` feature to run PHITS input files
 right inside the text editor! All thew files with instructions are available here: https://github.com/GordoNice/phits_sublime_support 
