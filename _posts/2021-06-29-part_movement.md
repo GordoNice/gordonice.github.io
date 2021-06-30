@@ -10,6 +10,8 @@ tags:
   - lecture
 ---
 
+![](https://ivangordeev.com/images/glowscript/partmovement.png)
+
 This visualization was done as an illustrative material for lecture on the
 "Physics and Technology of Accelerators" at Dubna State University. Coded with
 [VPython](https://vpython.org/) and powered by [GlowScript](https://www.glowscript.org).
