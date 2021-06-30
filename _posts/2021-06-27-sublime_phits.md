@@ -11,8 +11,8 @@ tags:
 
 <a href="https://github.com/GordoNice/phits_sublime_support" rel="Sublime Highlight for PHITS input files ">![](https://raw.githubusercontent.com/GordoNice/phits_sublime_support/master/Screenshot.png)</a>
 
-Managed to do syntax highlighting of PHITS input files for one of my favorite
-text editors Sublime.
+Managed to do syntax highlighting of [PHITS](https://phits.jaea.go.jp/) input
+files for one of my favorite text editors Sublime.
 
 Everything you need is to put 4 files in directory with the
 [Sublime](https://www.sublimetext.com/) config.
