@@ -79,7 +79,6 @@ analytics:
   provider               :  "google" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :  "G-N4FDH37EXM"
-    anonymize_ip: false            # default
 
 # Site Author
 author:
