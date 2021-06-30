@@ -12,7 +12,7 @@ A list of all the posts and pages found on the site. For you robots out there is
 <h2>Pages</h2>
 {% for post in site.pages %}
   {% if post != "talks" and post != "teaching" %}
-  {% include archive-single.html %}
+    {% include archive-single.html %}
   {% endif %}
 {% endfor %}
 
