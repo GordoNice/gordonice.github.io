@@ -9,12 +9,10 @@ tags:
   - input files
 ---
 
+<a href="https://github.com/GordoNice/phits_sublime_support" rel="Sublime Highlight for PHITS input files ">![](https://raw.githubusercontent.com/GordoNice/phits_sublime_support/master/Screenshot.png)</a>
+
 Managed to do syntax highlighting of PHITS input files for one of my favorite
 text editors Sublime.
-
-It looks like this:
-
-<a href="https://github.com/GordoNice/phits_sublime_support" rel="Sublime Highlight for PHITS input files ">![](https://raw.githubusercontent.com/GordoNice/phits_sublime_support/master/Screenshot.png)</a>
 
 It also makes it possible to use Sublime `build` feature to run PHITS input files
 right inside the text editor! All thew files with instructions are available here: [https://github.com/GordoNice/phits_sublime_support](https://github.com/GordoNice/phits_sublime_support) 
