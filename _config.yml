@@ -87,7 +87,7 @@ author:
   avatar           : "profile.jpg"
   bio              : "Junior Researcher at JINR, LRB"
   location         : "Dubna, Russia"
-  employer         : "Joint Institute for Nuclear Research"
+#  employer         : "Joint Institute for Nuclear Research"
   pubmed           : 
   googlescholar    : 
   email            : "gordeev@jinr.ru"
