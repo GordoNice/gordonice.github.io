@@ -35,3 +35,5 @@ Try this out on a GlowScript site or right here below!
 [Direct link to GlowScript site with the program](https://www.glowscript.org/#/user/Gordonice/folder/PhysTechAccelLections/program/Lec01pipe)
 
 <iframe src="/files/glowscript/Lec01pipe.html" style="width: 100%; height: 800px;border: none;"></iframe>
+
+_Let's create in order to understand!_

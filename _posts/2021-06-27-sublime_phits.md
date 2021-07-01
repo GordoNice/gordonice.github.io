@@ -23,4 +23,4 @@ right inside the text editor! All the files with instructions are available here
 
 Feel free to improve it and enjoy!
 
-_Let's create in order to undertstand!_
+_Let's create in order to understand!_
