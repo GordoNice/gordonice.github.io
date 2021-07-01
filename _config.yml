@@ -53,7 +53,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 search                   : true
-search_provider          : "algolia"
+search_provider          : algolia
 
 algolia:
   application_id         : "HTNCEKC7IN"                         # YOUR_APPLICATION_ID
