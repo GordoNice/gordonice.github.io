@@ -52,7 +52,13 @@ staticman:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
-search                   : true
+search_provider          : "algolia"
+
+algolia:
+  application_id         : "HTNCEKC7IN"                         # YOUR_APPLICATION_ID
+  index_name             : "ivangordeev"                        # YOUR_INDEX_NAME
+  search_only_api_key    : "840f32814f0a7e14b7747f1f093123d4"   # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             :  true                                # true (default), false
 
 # SEO Related
 google_site_verification :
