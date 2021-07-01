@@ -124,6 +124,7 @@ author:
 include:
   - .htaccess
   - _pages
+  - _fitsgeo
   - files
 exclude:
   - "*.sublime-project"
@@ -247,6 +248,13 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _fitsgeo
+  - scope:
+      path: ""
+      type: fitsgeo
+#    values:
+#      layout: single
+#      author_profile: true
 
 # Sass/SCSS
 sass:

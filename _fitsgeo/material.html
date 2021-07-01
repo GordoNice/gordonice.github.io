@@ -1,0 +1,3454 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predefined Materials &#8212; FitsGeo 1.0.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="_static/contentui.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/contentui.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]]}})</script>
+    <link rel="shortcut icon" href="_static/favicon.svg"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="License" href="license.html" />
+    <link rel="prev" title="User’s Guide" href="user_guide.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  <div class="document">
+    
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="index.html">
+    <img class="logo" src="_static/logo.svg" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+<p class="blurb">Python package for PHITS geometry development and visualization</p>
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide.html">User’s Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Predefined Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="predefined-materials">
+<h1>Predefined Materials<a class="headerlink" href="#predefined-materials" title="Permalink to this headline">¶</a></h1>
+<p>All available materials (from <a class="reference external" href="https://github.com/GordoNice/fitsgeo/blob/master/fitsgeo/data/GDATABASE.dat">GDATABASE.dat</a> and <a class="reference external" href="https://github.com/GordoNice/fitsgeo/blob/master/fitsgeo/data/SDATABASE.dat">SDATABASE.dat</a> databases) are listed below. These databases are based on GEANT4 and SRIM  material databases, see <a class="reference external" href="license.html">License section</a>.</p>
+<p>Format of table:</p>
+<ul class="simple">
+<li><p><strong>Name</strong> — string to invoke this material, all materials start with <code class="docutils literal notranslate"><span class="pre">MAT_</span></code> prefix</p></li>
+<li><p><strong>n el</strong> — number of elements in compound</p></li>
+<li><p><strong>Elements (Z Q…)</strong> — string of elements in “Z1 Q1 Z2 Q2 Z3 Q3 …” format, where Z — atomic number, Q — quantity (atomic or mass ratio)</p></li>
+</ul>
+<p>To use predefined materials in FitsGeo define new material object as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">fitsgeo</span><span class="o">.</span><span class="n">Material</span><span class="o">.</span><span class="n">database</span><span class="p">(</span><span class="s2">&quot;Name&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="longtable docutils align-default" id="id1">
+<caption><span class="caption-text"><strong>Predefined Materials Table</strong></span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 2%" />
+<col style="width: 34%" />
+<col style="width: 1%" />
+<col style="width: 6%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>№</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>n
+el</p></th>
+<th class="head"><p>Density
+(g/cm^3)</p></th>
+<th class="head"><p>Elements (Z Q…)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>MAT_H</p></td>
+<td><p>1</p></td>
+<td><p>9e-05</p></td>
+<td><p>1 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>MAT_HE</p></td>
+<td><p>1</p></td>
+<td><p>0.000178</p></td>
+<td><p>2 1</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>MAT_LI</p></td>
+<td><p>1</p></td>
+<td><p>0.534</p></td>
+<td><p>3 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>MAT_BE</p></td>
+<td><p>1</p></td>
+<td><p>1.848</p></td>
+<td><p>4 1</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>MAT_B</p></td>
+<td><p>1</p></td>
+<td><p>2.34</p></td>
+<td><p>5 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>MAT_C</p></td>
+<td><p>1</p></td>
+<td><p>2.0</p></td>
+<td><p>6 1</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>MAT_N</p></td>
+<td><p>1</p></td>
+<td><p>0.001251</p></td>
+<td><p>7 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>MAT_O</p></td>
+<td><p>1</p></td>
+<td><p>0.001429</p></td>
+<td><p>8 1</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>MAT_F</p></td>
+<td><p>1</p></td>
+<td><p>0.001696</p></td>
+<td><p>9 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>MAT_NE</p></td>
+<td><p>1</p></td>
+<td><p>0.0009</p></td>
+<td><p>10 1</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>MAT_NA</p></td>
+<td><p>1</p></td>
+<td><p>0.971</p></td>
+<td><p>11 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>MAT_MG</p></td>
+<td><p>1</p></td>
+<td><p>1.738</p></td>
+<td><p>12 1</p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>MAT_AL</p></td>
+<td><p>1</p></td>
+<td><p>2.6989</p></td>
+<td><p>13 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p>MAT_SI</p></td>
+<td><p>1</p></td>
+<td><p>2.33</p></td>
+<td><p>14 1</p></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p>MAT_P</p></td>
+<td><p>1</p></td>
+<td><p>1.82</p></td>
+<td><p>15 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p>MAT_S</p></td>
+<td><p>1</p></td>
+<td><p>2.07</p></td>
+<td><p>16 1</p></td>
+</tr>
+<tr class="row-even"><td><p>17</p></td>
+<td><p>MAT_CL</p></td>
+<td><p>1</p></td>
+<td><p>0.003214</p></td>
+<td><p>17 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><p>MAT_AR</p></td>
+<td><p>1</p></td>
+<td><p>0.001784</p></td>
+<td><p>18 1</p></td>
+</tr>
+<tr class="row-even"><td><p>19</p></td>
+<td><p>MAT_K</p></td>
+<td><p>1</p></td>
+<td><p>0.862</p></td>
+<td><p>19 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>20</p></td>
+<td><p>MAT_CA</p></td>
+<td><p>1</p></td>
+<td><p>1.55</p></td>
+<td><p>20 1</p></td>
+</tr>
+<tr class="row-even"><td><p>21</p></td>
+<td><p>MAT_SC</p></td>
+<td><p>1</p></td>
+<td><p>2.989</p></td>
+<td><p>21 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>22</p></td>
+<td><p>MAT_TI</p></td>
+<td><p>1</p></td>
+<td><p>4.54</p></td>
+<td><p>22 1</p></td>
+</tr>
+<tr class="row-even"><td><p>23</p></td>
+<td><p>MAT_V</p></td>
+<td><p>1</p></td>
+<td><p>6.11</p></td>
+<td><p>23 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>24</p></td>
+<td><p>MAT_CR</p></td>
+<td><p>1</p></td>
+<td><p>7.18</p></td>
+<td><p>24 1</p></td>
+</tr>
+<tr class="row-even"><td><p>25</p></td>
+<td><p>MAT_MN</p></td>
+<td><p>1</p></td>
+<td><p>7.3</p></td>
+<td><p>25 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>26</p></td>
+<td><p>MAT_FE</p></td>
+<td><p>1</p></td>
+<td><p>7.874</p></td>
+<td><p>26 1</p></td>
+</tr>
+<tr class="row-even"><td><p>27</p></td>
+<td><p>MAT_CO</p></td>
+<td><p>1</p></td>
+<td><p>8.9</p></td>
+<td><p>27 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>28</p></td>
+<td><p>MAT_NI</p></td>
+<td><p>1</p></td>
+<td><p>8.902</p></td>
+<td><p>28 1</p></td>
+</tr>
+<tr class="row-even"><td><p>29</p></td>
+<td><p>MAT_CU</p></td>
+<td><p>1</p></td>
+<td><p>8.96</p></td>
+<td><p>29 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>30</p></td>
+<td><p>MAT_ZN</p></td>
+<td><p>1</p></td>
+<td><p>7.133</p></td>
+<td><p>30 1</p></td>
+</tr>
+<tr class="row-even"><td><p>31</p></td>
+<td><p>MAT_GA</p></td>
+<td><p>1</p></td>
+<td><p>5.904</p></td>
+<td><p>31 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>32</p></td>
+<td><p>MAT_GE</p></td>
+<td><p>1</p></td>
+<td><p>5.323</p></td>
+<td><p>32 1</p></td>
+</tr>
+<tr class="row-even"><td><p>33</p></td>
+<td><p>MAT_AS</p></td>
+<td><p>1</p></td>
+<td><p>5.73</p></td>
+<td><p>33 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>34</p></td>
+<td><p>MAT_SE</p></td>
+<td><p>1</p></td>
+<td><p>4.79</p></td>
+<td><p>34 1</p></td>
+</tr>
+<tr class="row-even"><td><p>35</p></td>
+<td><p>MAT_BR</p></td>
+<td><p>1</p></td>
+<td><p>3.12</p></td>
+<td><p>35 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>36</p></td>
+<td><p>MAT_KR</p></td>
+<td><p>1</p></td>
+<td><p>0.003733</p></td>
+<td><p>36 1</p></td>
+</tr>
+<tr class="row-even"><td><p>37</p></td>
+<td><p>MAT_RB</p></td>
+<td><p>1</p></td>
+<td><p>1.532</p></td>
+<td><p>37 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>38</p></td>
+<td><p>MAT_SR</p></td>
+<td><p>1</p></td>
+<td><p>2.54</p></td>
+<td><p>38 1</p></td>
+</tr>
+<tr class="row-even"><td><p>39</p></td>
+<td><p>MAT_Y</p></td>
+<td><p>1</p></td>
+<td><p>4.469</p></td>
+<td><p>39 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>40</p></td>
+<td><p>MAT_ZR</p></td>
+<td><p>1</p></td>
+<td><p>6.506</p></td>
+<td><p>40 1</p></td>
+</tr>
+<tr class="row-even"><td><p>41</p></td>
+<td><p>MAT_NB</p></td>
+<td><p>1</p></td>
+<td><p>8.57</p></td>
+<td><p>41 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>42</p></td>
+<td><p>MAT_MO</p></td>
+<td><p>1</p></td>
+<td><p>10.22</p></td>
+<td><p>42 1</p></td>
+</tr>
+<tr class="row-even"><td><p>43</p></td>
+<td><p>MAT_TC</p></td>
+<td><p>1</p></td>
+<td><p>11.5</p></td>
+<td><p>43 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>44</p></td>
+<td><p>MAT_RU</p></td>
+<td><p>1</p></td>
+<td><p>12.41</p></td>
+<td><p>44 1</p></td>
+</tr>
+<tr class="row-even"><td><p>45</p></td>
+<td><p>MAT_RH</p></td>
+<td><p>1</p></td>
+<td><p>12.41</p></td>
+<td><p>45 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>46</p></td>
+<td><p>MAT_PD</p></td>
+<td><p>1</p></td>
+<td><p>12.02</p></td>
+<td><p>46 1</p></td>
+</tr>
+<tr class="row-even"><td><p>47</p></td>
+<td><p>MAT_AG</p></td>
+<td><p>1</p></td>
+<td><p>10.5</p></td>
+<td><p>47 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>48</p></td>
+<td><p>MAT_CD</p></td>
+<td><p>1</p></td>
+<td><p>8.65</p></td>
+<td><p>48 1</p></td>
+</tr>
+<tr class="row-even"><td><p>49</p></td>
+<td><p>MAT_IN</p></td>
+<td><p>1</p></td>
+<td><p>7.31</p></td>
+<td><p>49 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>50</p></td>
+<td><p>MAT_SN</p></td>
+<td><p>1</p></td>
+<td><p>5.75</p></td>
+<td><p>50 1</p></td>
+</tr>
+<tr class="row-even"><td><p>51</p></td>
+<td><p>MAT_SB</p></td>
+<td><p>1</p></td>
+<td><p>6.691</p></td>
+<td><p>51 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>52</p></td>
+<td><p>MAT_TE</p></td>
+<td><p>1</p></td>
+<td><p>6.24</p></td>
+<td><p>52 1</p></td>
+</tr>
+<tr class="row-even"><td><p>53</p></td>
+<td><p>MAT_I</p></td>
+<td><p>1</p></td>
+<td><p>4.93</p></td>
+<td><p>53 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>54</p></td>
+<td><p>MAT_XE</p></td>
+<td><p>1</p></td>
+<td><p>0.005887</p></td>
+<td><p>54 1</p></td>
+</tr>
+<tr class="row-even"><td><p>55</p></td>
+<td><p>MAT_CS</p></td>
+<td><p>1</p></td>
+<td><p>1.873</p></td>
+<td><p>55 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>56</p></td>
+<td><p>MAT_BA</p></td>
+<td><p>1</p></td>
+<td><p>3.5</p></td>
+<td><p>56 1</p></td>
+</tr>
+<tr class="row-even"><td><p>57</p></td>
+<td><p>MAT_LA</p></td>
+<td><p>1</p></td>
+<td><p>6.154</p></td>
+<td><p>57 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>58</p></td>
+<td><p>MAT_CE</p></td>
+<td><p>1</p></td>
+<td><p>6.77</p></td>
+<td><p>58 1</p></td>
+</tr>
+<tr class="row-even"><td><p>59</p></td>
+<td><p>MAT_PR</p></td>
+<td><p>1</p></td>
+<td><p>6.773</p></td>
+<td><p>59 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>60</p></td>
+<td><p>MAT_ND</p></td>
+<td><p>1</p></td>
+<td><p>7.008</p></td>
+<td><p>60 1</p></td>
+</tr>
+<tr class="row-even"><td><p>61</p></td>
+<td><p>MAT_PM</p></td>
+<td><p>1</p></td>
+<td><p>7.264</p></td>
+<td><p>61 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>62</p></td>
+<td><p>MAT_SM</p></td>
+<td><p>1</p></td>
+<td><p>7.52</p></td>
+<td><p>62 1</p></td>
+</tr>
+<tr class="row-even"><td><p>63</p></td>
+<td><p>MAT_EU</p></td>
+<td><p>1</p></td>
+<td><p>5.243</p></td>
+<td><p>63 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>64</p></td>
+<td><p>MAT_GD</p></td>
+<td><p>1</p></td>
+<td><p>7.9004</p></td>
+<td><p>64 1</p></td>
+</tr>
+<tr class="row-even"><td><p>65</p></td>
+<td><p>MAT_TB</p></td>
+<td><p>1</p></td>
+<td><p>8.229</p></td>
+<td><p>65 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>66</p></td>
+<td><p>MAT_DY</p></td>
+<td><p>1</p></td>
+<td><p>8.55</p></td>
+<td><p>66 1</p></td>
+</tr>
+<tr class="row-even"><td><p>67</p></td>
+<td><p>MAT_HO</p></td>
+<td><p>1</p></td>
+<td><p>8.795</p></td>
+<td><p>67 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>68</p></td>
+<td><p>MAT_ER</p></td>
+<td><p>1</p></td>
+<td><p>9.066</p></td>
+<td><p>68 1</p></td>
+</tr>
+<tr class="row-even"><td><p>69</p></td>
+<td><p>MAT_TM</p></td>
+<td><p>1</p></td>
+<td><p>9.321</p></td>
+<td><p>69 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>70</p></td>
+<td><p>MAT_YB</p></td>
+<td><p>1</p></td>
+<td><p>6.903</p></td>
+<td><p>70 1</p></td>
+</tr>
+<tr class="row-even"><td><p>71</p></td>
+<td><p>MAT_LU</p></td>
+<td><p>1</p></td>
+<td><p>9.841</p></td>
+<td><p>71 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>72</p></td>
+<td><p>MAT_HF</p></td>
+<td><p>1</p></td>
+<td><p>13.31</p></td>
+<td><p>72 1</p></td>
+</tr>
+<tr class="row-even"><td><p>73</p></td>
+<td><p>MAT_TA</p></td>
+<td><p>1</p></td>
+<td><p>16.654</p></td>
+<td><p>73 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>74</p></td>
+<td><p>MAT_W</p></td>
+<td><p>1</p></td>
+<td><p>19.3</p></td>
+<td><p>74 1</p></td>
+</tr>
+<tr class="row-even"><td><p>75</p></td>
+<td><p>MAT_RE</p></td>
+<td><p>1</p></td>
+<td><p>21.02</p></td>
+<td><p>75 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>76</p></td>
+<td><p>MAT_OS</p></td>
+<td><p>1</p></td>
+<td><p>22.57</p></td>
+<td><p>76 1</p></td>
+</tr>
+<tr class="row-even"><td><p>77</p></td>
+<td><p>MAT_IR</p></td>
+<td><p>1</p></td>
+<td><p>22.42</p></td>
+<td><p>77 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>78</p></td>
+<td><p>MAT_PT</p></td>
+<td><p>1</p></td>
+<td><p>21.45</p></td>
+<td><p>78 1</p></td>
+</tr>
+<tr class="row-even"><td><p>79</p></td>
+<td><p>MAT_AU</p></td>
+<td><p>1</p></td>
+<td><p>19.32</p></td>
+<td><p>79 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>80</p></td>
+<td><p>MAT_HG</p></td>
+<td><p>1</p></td>
+<td><p>13.546</p></td>
+<td><p>80 1</p></td>
+</tr>
+<tr class="row-even"><td><p>81</p></td>
+<td><p>MAT_TL</p></td>
+<td><p>1</p></td>
+<td><p>11.85</p></td>
+<td><p>81 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>82</p></td>
+<td><p>MAT_PB</p></td>
+<td><p>1</p></td>
+<td><p>11.35</p></td>
+<td><p>82 1</p></td>
+</tr>
+<tr class="row-even"><td><p>83</p></td>
+<td><p>MAT_BI</p></td>
+<td><p>1</p></td>
+<td><p>9.747</p></td>
+<td><p>83 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>84</p></td>
+<td><p>MAT_PO</p></td>
+<td><p>1</p></td>
+<td><p>9.32</p></td>
+<td><p>84 1</p></td>
+</tr>
+<tr class="row-even"><td><p>85</p></td>
+<td><p>MAT_AT</p></td>
+<td><p>1</p></td>
+<td><p>9.32</p></td>
+<td><p>85 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>86</p></td>
+<td><p>MAT_RN</p></td>
+<td><p>1</p></td>
+<td><p>0.00973</p></td>
+<td><p>86 1</p></td>
+</tr>
+<tr class="row-even"><td><p>87</p></td>
+<td><p>MAT_FR</p></td>
+<td><p>1</p></td>
+<td><p>1.0</p></td>
+<td><p>87 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>88</p></td>
+<td><p>MAT_RA</p></td>
+<td><p>1</p></td>
+<td><p>5.0</p></td>
+<td><p>88 1</p></td>
+</tr>
+<tr class="row-even"><td><p>89</p></td>
+<td><p>MAT_AC</p></td>
+<td><p>1</p></td>
+<td><p>10.07</p></td>
+<td><p>89 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>90</p></td>
+<td><p>MAT_TH</p></td>
+<td><p>1</p></td>
+<td><p>11.72</p></td>
+<td><p>90 1</p></td>
+</tr>
+<tr class="row-even"><td><p>91</p></td>
+<td><p>MAT_PA</p></td>
+<td><p>1</p></td>
+<td><p>15.37</p></td>
+<td><p>91 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>92</p></td>
+<td><p>MAT_U</p></td>
+<td><p>1</p></td>
+<td><p>18.95</p></td>
+<td><p>92 1</p></td>
+</tr>
+<tr class="row-even"><td><p>93</p></td>
+<td><p>MAT_NP</p></td>
+<td><p>1</p></td>
+<td><p>20.25</p></td>
+<td><p>93 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>94</p></td>
+<td><p>MAT_PU</p></td>
+<td><p>1</p></td>
+<td><p>19.84</p></td>
+<td><p>94 1</p></td>
+</tr>
+<tr class="row-even"><td><p>95</p></td>
+<td><p>MAT_AM</p></td>
+<td><p>1</p></td>
+<td><p>13.67</p></td>
+<td><p>95 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>96</p></td>
+<td><p>MAT_CM</p></td>
+<td><p>1</p></td>
+<td><p>13.51</p></td>
+<td><p>96 1</p></td>
+</tr>
+<tr class="row-even"><td><p>97</p></td>
+<td><p>MAT_BK</p></td>
+<td><p>1</p></td>
+<td><p>14.0</p></td>
+<td><p>97 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>98</p></td>
+<td><p>MAT_CF</p></td>
+<td><p>1</p></td>
+<td><p>10.0</p></td>
+<td><p>98 1</p></td>
+</tr>
+<tr class="row-even"><td><p>99</p></td>
+<td><p>MAT_WATER_LIQUID_(ICRU-276)</p></td>
+<td><p>2</p></td>
+<td><p>1.0</p></td>
+<td><p>1  2  8  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>100</p></td>
+<td><p>MAT_WATER_VAPOR_(ICRU-277)</p></td>
+<td><p>2</p></td>
+<td><p>0.00125</p></td>
+<td><p>1  2  8  1</p></td>
+</tr>
+<tr class="row-even"><td><p>101</p></td>
+<td><p>MAT_CONCRETE</p></td>
+<td><p>6</p></td>
+<td><p>2.34</p></td>
+<td><p>6  23  8  40  14  12  20  12  1  10  12  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>102</p></td>
+<td><p>MAT_GRAPHITE_CARBON_(ICRU-906)</p></td>
+<td><p>1</p></td>
+<td><p>2.26</p></td>
+<td><p>6  6</p></td>
+</tr>
+<tr class="row-even"><td><p>103</p></td>
+<td><p>MAT_GLASS_PB</p></td>
+<td><p>5</p></td>
+<td><p>4.8</p></td>
+<td><p>8  59  14  24  82  5  11  7  19  4</p></td>
+</tr>
+<tr class="row-odd"><td><p>104</p></td>
+<td><p>MAT_LIF</p></td>
+<td><p>2</p></td>
+<td><p>2.635</p></td>
+<td><p>3  1  9  1</p></td>
+</tr>
+<tr class="row-even"><td><p>105</p></td>
+<td><p>MAT_NACL</p></td>
+<td><p>2</p></td>
+<td><p>2.165</p></td>
+<td><p>11  1  17  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>106</p></td>
+<td><p>MAT_PARAFFIN</p></td>
+<td><p>2</p></td>
+<td><p>0.89</p></td>
+<td><p>1  2  6  1</p></td>
+</tr>
+<tr class="row-even"><td><p>107</p></td>
+<td><p>MAT_P-10_GAS</p></td>
+<td><p>3</p></td>
+<td><p>0.00156</p></td>
+<td><p>18  90  1  8  6  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>108</p></td>
+<td><p>MAT_METHANE_CHLORO_TRIFLUORO</p></td>
+<td><p>3</p></td>
+<td><p>0.00125</p></td>
+<td><p>6  1  9  3  17  1</p></td>
+</tr>
+<tr class="row-even"><td><p>109</p></td>
+<td><p>MAT_ANTHRACENE</p></td>
+<td><p>2</p></td>
+<td><p>1.243</p></td>
+<td><p>1  10  6  14</p></td>
+</tr>
+<tr class="row-odd"><td><p>110</p></td>
+<td><p>MAT_CSI</p></td>
+<td><p>2</p></td>
+<td><p>4.51</p></td>
+<td><p>55  1  53  1</p></td>
+</tr>
+<tr class="row-even"><td><p>111</p></td>
+<td><p>MAT_PILOTB</p></td>
+<td><p>2</p></td>
+<td><p>1.02</p></td>
+<td><p>1  11  6  10</p></td>
+</tr>
+<tr class="row-odd"><td><p>112</p></td>
+<td><p>MAT_KI</p></td>
+<td><p>2</p></td>
+<td><p>3.13</p></td>
+<td><p>19  1  53  1</p></td>
+</tr>
+<tr class="row-even"><td><p>113</p></td>
+<td><p>MAT_SCINTILLATOR_-_NAI_(ICRU-252)</p></td>
+<td><p>2</p></td>
+<td><p>3.667</p></td>
+<td><p>11  1  53  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>114</p></td>
+<td><p>MAT_SCINTILLATOR-STILBENE_(ICRU-255)</p></td>
+<td><p>2</p></td>
+<td><p>0.9707</p></td>
+<td><p>1  12  6  14</p></td>
+</tr>
+<tr class="row-even"><td><p>115</p></td>
+<td><p>MAT_SCINTILLATOR-TOLUENE_(ICRU-266)</p></td>
+<td><p>2</p></td>
+<td><p>0.8669</p></td>
+<td><p>1  8  6  7</p></td>
+</tr>
+<tr class="row-odd"><td><p>116</p></td>
+<td><p>MAT_GAAS</p></td>
+<td><p>2</p></td>
+<td><p>5.32</p></td>
+<td><p>31  1  33  1</p></td>
+</tr>
+<tr class="row-even"><td><p>117</p></td>
+<td><p>MAT_GLASS_SODA_LIME</p></td>
+<td><p>6</p></td>
+<td><p>2.33</p></td>
+<td><p>8  60  14  25  11  10  20  3  12  1  13  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>118</p></td>
+<td><p>MAT_GLASS_BORO_SILICATE</p></td>
+<td><p>5</p></td>
+<td><p>2.58</p></td>
+<td><p>8  60  14  26  5  9  11  3  13  1</p></td>
+</tr>
+<tr class="row-even"><td><p>119</p></td>
+<td><p>MAT_PYREX</p></td>
+<td><p>5</p></td>
+<td><p>2.23</p></td>
+<td><p>8  65  14  25  5  7  11  2  13  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>120</p></td>
+<td><p>MAT_PYREX_PB</p></td>
+<td><p>5</p></td>
+<td><p>4.8</p></td>
+<td><p>8  59  14  24  82  5  11  7  19  4</p></td>
+</tr>
+<tr class="row-even"><td><p>121</p></td>
+<td><p>MAT_PMMA</p></td>
+<td><p>3</p></td>
+<td><p>0.95</p></td>
+<td><p>1  8  6  5  8  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>122</p></td>
+<td><p>MAT_AZ_111</p></td>
+<td><p>3</p></td>
+<td><p>0.92</p></td>
+<td><p>1  8  6  5  8  2</p></td>
+</tr>
+<tr class="row-even"><td><p>123</p></td>
+<td><p>MAT_SI3N4</p></td>
+<td><p>2</p></td>
+<td><p>3.44</p></td>
+<td><p>14  3  7  4</p></td>
+</tr>
+<tr class="row-odd"><td><p>124</p></td>
+<td><p>MAT_SIO2_QUARTZ_(ICRU-245)</p></td>
+<td><p>2</p></td>
+<td><p>2.32</p></td>
+<td><p>8  2  14  1</p></td>
+</tr>
+<tr class="row-even"><td><p>125</p></td>
+<td><p>MAT_YBACUO</p></td>
+<td><p>4</p></td>
+<td><p>6.54</p></td>
+<td><p>39  1  56  2  29  3  8  7</p></td>
+</tr>
+<tr class="row-odd"><td><p>126</p></td>
+<td><p>MAT_HITC_TLCABACU_2223</p></td>
+<td><p>4</p></td>
+<td><p>7.0</p></td>
+<td><p>81  2  20  2  56  3  29  2</p></td>
+</tr>
+<tr class="row-even"><td><p>127</p></td>
+<td><p>MAT_HITC_BISRCACUO_2212</p></td>
+<td><p>4</p></td>
+<td><p>6.54</p></td>
+<td><p>83  2  38  2  20  1  29  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>128</p></td>
+<td><p>MAT_AL2O3</p></td>
+<td><p>2</p></td>
+<td><p>3.98</p></td>
+<td><p>13 2 8 3</p></td>
+</tr>
+<tr class="row-even"><td><p>129</p></td>
+<td><p>MAT_BAKELITE</p></td>
+<td><p>3</p></td>
+<td><p>1.45</p></td>
+<td><p>1  9  6  9  8  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>130</p></td>
+<td><p>MAT_DELRIN</p></td>
+<td><p>3</p></td>
+<td><p>1.42</p></td>
+<td><p>1  2  6  1  8  1</p></td>
+</tr>
+<tr class="row-even"><td><p>131</p></td>
+<td><p>MAT_LEXAN_(ICRU-219)</p></td>
+<td><p>3</p></td>
+<td><p>1.2</p></td>
+<td><p>1  14  6  16  8  3</p></td>
+</tr>
+<tr class="row-odd"><td><p>132</p></td>
+<td><p>MAT_LUCITE</p></td>
+<td><p>3</p></td>
+<td><p>1.2</p></td>
+<td><p>1  8  6  5  8  2</p></td>
+</tr>
+<tr class="row-even"><td><p>133</p></td>
+<td><p>MAT_MYLAR</p></td>
+<td><p>3</p></td>
+<td><p>1.397</p></td>
+<td><p>1  8  6  10  8  4</p></td>
+</tr>
+<tr class="row-odd"><td><p>134</p></td>
+<td><p>MAT_NYLON_TYPE_6_AND_TYPE_6_6(ICRU-209)</p></td>
+<td><p>4</p></td>
+<td><p>1.14</p></td>
+<td><p>1  11  6  6  7  1  8  1</p></td>
+</tr>
+<tr class="row-even"><td><p>135</p></td>
+<td><p>MAT_PARAFFIN_WAX_(ICRU-213)</p></td>
+<td><p>2</p></td>
+<td><p>0.93</p></td>
+<td><p>1  2  6  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>136</p></td>
+<td><p>MAT_PLEXIGLAS</p></td>
+<td><p>3</p></td>
+<td><p>1.17</p></td>
+<td><p>1  6  6  4  8  2</p></td>
+</tr>
+<tr class="row-even"><td><p>137</p></td>
+<td><p>MAT_TEFLON-POLYTETRAFLUOROETHYLENE(ICRU-227)</p></td>
+<td><p>2</p></td>
+<td><p>2.2</p></td>
+<td><p>6  2  9  4</p></td>
+</tr>
+<tr class="row-odd"><td><p>138</p></td>
+<td><p>MAT_EPOXY</p></td>
+<td><p>3</p></td>
+<td><p>1.18</p></td>
+<td><p>1  19  6  18  8  3</p></td>
+</tr>
+<tr class="row-even"><td><p>139</p></td>
+<td><p>MAT_FORMVAR_(ICRU-760)</p></td>
+<td><p>3</p></td>
+<td><p>1.31</p></td>
+<td><p>1  8  6  5  8  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>140</p></td>
+<td><p>MAT_PARALENE_C</p></td>
+<td><p>3</p></td>
+<td><p>1.289</p></td>
+<td><p>1  7  6  8  17  1</p></td>
+</tr>
+<tr class="row-even"><td><p>141</p></td>
+<td><p>MAT_PARALENE_N</p></td>
+<td><p>2</p></td>
+<td><p>1.11</p></td>
+<td><p>1  8  6  8</p></td>
+</tr>
+<tr class="row-odd"><td><p>142</p></td>
+<td><p>MAT_POLYETHYLENE</p></td>
+<td><p>2</p></td>
+<td><p>0.93</p></td>
+<td><p>1  4  6  2</p></td>
+</tr>
+<tr class="row-even"><td><p>143</p></td>
+<td><p>MAT_MYLAR_(ICRU-222)</p></td>
+<td><p>3</p></td>
+<td><p>1.397</p></td>
+<td><p>1  8  6  10  8  4</p></td>
+</tr>
+<tr class="row-odd"><td><p>144</p></td>
+<td><p>MAT_LUCITE_(ICRU-223)</p></td>
+<td><p>3</p></td>
+<td><p>1.2</p></td>
+<td><p>1  8  6  5  8  2</p></td>
+</tr>
+<tr class="row-even"><td><p>145</p></td>
+<td><p>MAT_POLYPROPYLENE_(ICRU-225)</p></td>
+<td><p>2</p></td>
+<td><p>0.9</p></td>
+<td><p>1  6  6  3</p></td>
+</tr>
+<tr class="row-odd"><td><p>146</p></td>
+<td><p>MAT_KAPTON_POLYIMIDE_FILM_(ICRU-179)</p></td>
+<td><p>4</p></td>
+<td><p>1.42</p></td>
+<td><p>1  10  6  22  7  2  8  5</p></td>
+</tr>
+<tr class="row-even"><td><p>147</p></td>
+<td><p>MAT_POLYSTYRENE_(ICRU-226)</p></td>
+<td><p>2</p></td>
+<td><p>1.06</p></td>
+<td><p>1  8  6  8</p></td>
+</tr>
+<tr class="row-odd"><td><p>148</p></td>
+<td><p>MAT_PVC_(ICRU-232)</p></td>
+<td><p>3</p></td>
+<td><p>1.3</p></td>
+<td><p>1  3  6  2  17  1</p></td>
+</tr>
+<tr class="row-even"><td><p>149</p></td>
+<td><p>MAT_SARAN</p></td>
+<td><p>3</p></td>
+<td><p>1.69</p></td>
+<td><p>1  2  6  2  17  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>150</p></td>
+<td><p>MAT_BRASS</p></td>
+<td><p>3</p></td>
+<td><p>8.52</p></td>
+<td><p>29  62  30  35  82  3</p></td>
+</tr>
+<tr class="row-even"><td><p>151</p></td>
+<td><p>MAT_BRONZE</p></td>
+<td><p>3</p></td>
+<td><p>8.82</p></td>
+<td><p>29  89  30  9  82  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>152</p></td>
+<td><p>MAT_INCONEL_600</p></td>
+<td><p>3</p></td>
+<td><p>8.43</p></td>
+<td><p>24  15  26  9  28  76</p></td>
+</tr>
+<tr class="row-even"><td><p>153</p></td>
+<td><p>MAT_MONEL_400</p></td>
+<td><p>4</p></td>
+<td><p>8.85</p></td>
+<td><p>25  1  26  2  28  66  29  31</p></td>
+</tr>
+<tr class="row-odd"><td><p>154</p></td>
+<td><p>MAT_STAINLESS_STEEL</p></td>
+<td><p>3</p></td>
+<td><p>8.0</p></td>
+<td><p>24  8  26  74  28  18</p></td>
+</tr>
+<tr class="row-even"><td><p>155</p></td>
+<td><p>MAT_ACETYLENE_(ICRU-101)</p></td>
+<td><p>2</p></td>
+<td><p>0.001097</p></td>
+<td><p>1  2  6  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>156</p></td>
+<td><p>MAT_CARBON_DIOXIDE_(ICRU-134)</p></td>
+<td><p>2</p></td>
+<td><p>0.001842</p></td>
+<td><p>6  1  8  2</p></td>
+</tr>
+<tr class="row-even"><td><p>157</p></td>
+<td><p>MAT_ETHYLENE_(ICRU-155)</p></td>
+<td><p>2</p></td>
+<td><p>0.001175</p></td>
+<td><p>1  4  6  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>158</p></td>
+<td><p>MAT_LITHIUM_FLUORIDE_(ICRU-185)</p></td>
+<td><p>2</p></td>
+<td><p>2.635</p></td>
+<td><p>3  1  9  1</p></td>
+</tr>
+<tr class="row-even"><td><p>159</p></td>
+<td><p>MAT_METHANE_(ICRU-197)</p></td>
+<td><p>2</p></td>
+<td><p>0.000717</p></td>
+<td><p>1  4  6  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>160</p></td>
+<td><p>MAT_POLYCARBONATELEXANMAKROFOL(ICRU-219)</p></td>
+<td><p>3</p></td>
+<td><p>1.2</p></td>
+<td><p>1  14  6  16  8  3</p></td>
+</tr>
+<tr class="row-even"><td><p>161</p></td>
+<td><p>MAT_POLYETHYLENE_(ICRU-221)</p></td>
+<td><p>2</p></td>
+<td><p>0.94</p></td>
+<td><p>1  4  6  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>162</p></td>
+<td><p>MAT_MYLAR_MELINEX_POLYETHYLENE_TEREPHTHALATE</p></td>
+<td><p>3</p></td>
+<td><p>1.4</p></td>
+<td><p>1  8  6  10  8  4</p></td>
+</tr>
+<tr class="row-even"><td><p>163</p></td>
+<td><p>MAT_POLYMETHYL_METHACRYLATELUCITEPERSPEX</p></td>
+<td><p>3</p></td>
+<td><p>1.19</p></td>
+<td><p>1  8  6  5  8  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>164</p></td>
+<td><p>MAT_PVC-POLYVINYLCHLORIDE_(ICRU-232)</p></td>
+<td><p>3</p></td>
+<td><p>1.3</p></td>
+<td><p>1  3  6  2  17  1</p></td>
+</tr>
+<tr class="row-even"><td><p>165</p></td>
+<td><p>MAT_PROPANE_(ICRU-238)</p></td>
+<td><p>2</p></td>
+<td><p>0.001879</p></td>
+<td><p>1  8  6  3</p></td>
+</tr>
+<tr class="row-odd"><td><p>166</p></td>
+<td><p>MAT_TOLUENE_(ICRU-267)</p></td>
+<td><p>2</p></td>
+<td><p>0.8669</p></td>
+<td><p>1  8  6  7</p></td>
+</tr>
+<tr class="row-even"><td><p>167</p></td>
+<td><p>MAT_ACETALDEHYDE_(ICRU-300)</p></td>
+<td><p>3</p></td>
+<td><p>0.7834</p></td>
+<td><p>1  4  6  2  8  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>168</p></td>
+<td><p>MAT_ACETONE_(ICRU-301)</p></td>
+<td><p>3</p></td>
+<td><p>0.7678</p></td>
+<td><p>1  6  6  3  8  1</p></td>
+</tr>
+<tr class="row-even"><td><p>169</p></td>
+<td><p>MAT_ANTHRACENE_(ICRU-314)</p></td>
+<td><p>2</p></td>
+<td><p>1.28</p></td>
+<td><p>1  10  6  14</p></td>
+</tr>
+<tr class="row-odd"><td><p>170</p></td>
+<td><p>MAT_BARIUM_CHLORIDE_(ICRU-320)</p></td>
+<td><p>2</p></td>
+<td><p>3.9</p></td>
+<td><p>17  2  56  1</p></td>
+</tr>
+<tr class="row-even"><td><p>171</p></td>
+<td><p>MAT_BARIUM_FLUORIDE_(ICRU-322)</p></td>
+<td><p>2</p></td>
+<td><p>4.893</p></td>
+<td><p>9  2  56  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>172</p></td>
+<td><p>MAT_BUTENE_(ICRU-342)</p></td>
+<td><p>2</p></td>
+<td><p>0.0024</p></td>
+<td><p>1  8  6  4</p></td>
+</tr>
+<tr class="row-even"><td><p>173</p></td>
+<td><p>MAT_BUTYNE_(ICRU-344)</p></td>
+<td><p>2</p></td>
+<td><p>0.0023</p></td>
+<td><p>1  6  6  4</p></td>
+</tr>
+<tr class="row-odd"><td><p>174</p></td>
+<td><p>MAT_CADMIUM_TELLURIDE_(ICRU-346)</p></td>
+<td><p>2</p></td>
+<td><p>6.2</p></td>
+<td><p>48  1  52  1</p></td>
+</tr>
+<tr class="row-even"><td><p>175</p></td>
+<td><p>MAT_CARBON_DISULFIDE_(ICRU-348)</p></td>
+<td><p>2</p></td>
+<td><p>1.256</p></td>
+<td><p>6  1  16  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>176</p></td>
+<td><p>MAT_CARBON_MONOXIDE_(ICRU-350)</p></td>
+<td><p>2</p></td>
+<td><p>0.00117</p></td>
+<td><p>6  1  8  1</p></td>
+</tr>
+<tr class="row-even"><td><p>177</p></td>
+<td><p>MAT_CHLOROFORM_(ICRU-380)</p></td>
+<td><p>3</p></td>
+<td><p>1.483</p></td>
+<td><p>6  1  1  1  17  3</p></td>
+</tr>
+<tr class="row-odd"><td><p>178</p></td>
+<td><p>MAT_CR-39_PADC_(ICRU-390)</p></td>
+<td><p>3</p></td>
+<td><p>1.0</p></td>
+<td><p>1  18  6  12  8  7</p></td>
+</tr>
+<tr class="row-even"><td><p>179</p></td>
+<td><p>MAT_CYCLOHEPTANE_(ICRU-392)</p></td>
+<td><p>2</p></td>
+<td><p>0.81</p></td>
+<td><p>6  7  1  14</p></td>
+</tr>
+<tr class="row-odd"><td><p>180</p></td>
+<td><p>MAT_13-CYCLOHEXADIENE_(ICRU-394)</p></td>
+<td><p>2</p></td>
+<td><p>0.8405</p></td>
+<td><p>1  8  6  6</p></td>
+</tr>
+<tr class="row-even"><td><p>181</p></td>
+<td><p>MAT_CYCLOHEXANE_(ICRU-400)</p></td>
+<td><p>2</p></td>
+<td><p>0.77855</p></td>
+<td><p>1  12  6  6</p></td>
+</tr>
+<tr class="row-odd"><td><p>182</p></td>
+<td><p>MAT_DICHLOROMETHANE_(ICRU-414)</p></td>
+<td><p>3</p></td>
+<td><p>1.327</p></td>
+<td><p>6  1  1  2  17  2</p></td>
+</tr>
+<tr class="row-even"><td><p>183</p></td>
+<td><p>MAT_DIMETHYLSULFITE_(ICRU-420)</p></td>
+<td><p>4</p></td>
+<td><p>1.213</p></td>
+<td><p>6  2  1  6  8  3  16  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>184</p></td>
+<td><p>MAT_ERBIUM_OXIDE_(ICRU-422)</p></td>
+<td><p>2</p></td>
+<td><p>8.64</p></td>
+<td><p>8  3  68  2</p></td>
+</tr>
+<tr class="row-even"><td><p>185</p></td>
+<td><p>MAT_ETHYL_BROMIDE_BROMOETHANE_(ICRU-426)</p></td>
+<td><p>3</p></td>
+<td><p>1.46</p></td>
+<td><p>6  2  1  5  35  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>186</p></td>
+<td><p>MAT_ETHYL_CELLULOSE_(ICRU-428)</p></td>
+<td><p>3</p></td>
+<td><p>1.0</p></td>
+<td><p>6  12  1  22  8  5</p></td>
+</tr>
+<tr class="row-even"><td><p>187</p></td>
+<td><p>MAT_ETHYL_IODIDE_IODOETHANE_(ICRU-430)</p></td>
+<td><p>3</p></td>
+<td><p>1.936</p></td>
+<td><p>6  2  1  5  53  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>188</p></td>
+<td><p>MAT_ETHYLAMINE_ETHANAMINE__(ICRU-431)</p></td>
+<td><p>3</p></td>
+<td><p>0.001</p></td>
+<td><p>6  2  1  7  7  1</p></td>
+</tr>
+<tr class="row-even"><td><p>189</p></td>
+<td><p>MAT_ETHYLENE_OXIDE_OXIRANE_(ICRU-432)</p></td>
+<td><p>3</p></td>
+<td><p>0.8824</p></td>
+<td><p>1  4  6  2  8  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>190</p></td>
+<td><p>MAT_ETHYLENE_SULFIDE_THIIRANE_(ICRU-434)</p></td>
+<td><p>3</p></td>
+<td><p>0.00125</p></td>
+<td><p>1  4  6  2  16  1</p></td>
+</tr>
+<tr class="row-even"><td><p>191</p></td>
+<td><p>MAT_ETHYNYLBENZENE__(ICRU-436)</p></td>
+<td><p>2</p></td>
+<td><p>0.93</p></td>
+<td><p>6  8  1  6</p></td>
+</tr>
+<tr class="row-odd"><td><p>192</p></td>
+<td><p>MAT_FLUOROFORM__(ICRU-437)</p></td>
+<td><p>3</p></td>
+<td><p>0.001</p></td>
+<td><p>6  1  1  1  9  3</p></td>
+</tr>
+<tr class="row-even"><td><p>193</p></td>
+<td><p>MAT_FREON-114-B2__(ICRU-438)</p></td>
+<td><p>3</p></td>
+<td><p>2.149</p></td>
+<td><p>6  2  35  2  9  4</p></td>
+</tr>
+<tr class="row-odd"><td><p>194</p></td>
+<td><p>MAT_FREON-116_(ICRU-441)</p></td>
+<td><p>2</p></td>
+<td><p>0.00901</p></td>
+<td><p>6  2  9  6</p></td>
+</tr>
+<tr class="row-even"><td><p>195</p></td>
+<td><p>MAT_FREON-12_(ICRU-444)</p></td>
+<td><p>3</p></td>
+<td><p>0.00518</p></td>
+<td><p>6  1  17  2  9  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>196</p></td>
+<td><p>MAT_FREON-13_(ICRU-448)</p></td>
+<td><p>3</p></td>
+<td><p>0.00701</p></td>
+<td><p>6  1  17  1  9  3</p></td>
+</tr>
+<tr class="row-even"><td><p>197</p></td>
+<td><p>MAT_FREON-13B1_(ICRU-452)</p></td>
+<td><p>3</p></td>
+<td><p>0.0061</p></td>
+<td><p>6  1  9  3  35  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>198</p></td>
+<td><p>MAT_FREON-C-318_(ICRU-455)</p></td>
+<td><p>2</p></td>
+<td><p>0.0089</p></td>
+<td><p>6  4  9  8</p></td>
+</tr>
+<tr class="row-even"><td><p>199</p></td>
+<td><p>MAT_GALLIUM_ANTIMONIDE_(ICRU-458)</p></td>
+<td><p>2</p></td>
+<td><p>5.614</p></td>
+<td><p>31  1  51  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>200</p></td>
+<td><p>MAT_GALLIUM_ARSENIDE_(ICRU-460)</p></td>
+<td><p>2</p></td>
+<td><p>5.3176</p></td>
+<td><p>31  1  33  1</p></td>
+</tr>
+<tr class="row-even"><td><p>201</p></td>
+<td><p>MAT_GALLIUM_NITRIDE_(ICRU-462)</p></td>
+<td><p>2</p></td>
+<td><p>6.1</p></td>
+<td><p>7  1  31  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>202</p></td>
+<td><p>MAT_GALLIUM_PHOSPHIDE_(ICRU-465)</p></td>
+<td><p>2</p></td>
+<td><p>4.138</p></td>
+<td><p>15  1  31  1</p></td>
+</tr>
+<tr class="row-even"><td><p>203</p></td>
+<td><p>MAT_GENETRON-21_(ICRU-468)</p></td>
+<td><p>4</p></td>
+<td><p>0.00421</p></td>
+<td><p>6  1  1  1  17  2  9  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>204</p></td>
+<td><p>MAT_GLYCEROL_(ICRU-469)</p></td>
+<td><p>3</p></td>
+<td><p>1.475</p></td>
+<td><p>1  8  6  3  8  3</p></td>
+</tr>
+<tr class="row-even"><td><p>205</p></td>
+<td><p>MAT_HEPTANE_(ICRU-471)</p></td>
+<td><p>2</p></td>
+<td><p>0.684</p></td>
+<td><p>6  7  1  16</p></td>
+</tr>
+<tr class="row-odd"><td><p>206</p></td>
+<td><p>MAT_HEPTYNE_(ICRU-473)</p></td>
+<td><p>2</p></td>
+<td><p>0.733</p></td>
+<td><p>6  7  1  12</p></td>
+</tr>
+<tr class="row-even"><td><p>207</p></td>
+<td><p>MAT_HEXANE_(ICRU-474)</p></td>
+<td><p>2</p></td>
+<td><p>0.655</p></td>
+<td><p>6  6  1  14</p></td>
+</tr>
+<tr class="row-odd"><td><p>208</p></td>
+<td><p>MAT_HEXENE_(ICRU-478)</p></td>
+<td><p>2</p></td>
+<td><p>0.673</p></td>
+<td><p>6  6  1  12</p></td>
+</tr>
+<tr class="row-even"><td><p>209</p></td>
+<td><p>MAT_HEXYNE_(ICRU-482)</p></td>
+<td><p>2</p></td>
+<td><p>0.716</p></td>
+<td><p>6  6  1  10</p></td>
+</tr>
+<tr class="row-odd"><td><p>210</p></td>
+<td><p>MAT_INDIUM_NITRIDE_(ICRU-488)</p></td>
+<td><p>2</p></td>
+<td><p>6.81</p></td>
+<td><p>7  1  49  1</p></td>
+</tr>
+<tr class="row-even"><td><p>211</p></td>
+<td><p>MAT_INDIUM_OXIDE_(ICRU-490)</p></td>
+<td><p>2</p></td>
+<td><p>7.18</p></td>
+<td><p>8  3  49  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>212</p></td>
+<td><p>MAT_INDIUM_PHOSPHIDE_(ICRU-492)</p></td>
+<td><p>2</p></td>
+<td><p>4.81</p></td>
+<td><p>15  1  49  1</p></td>
+</tr>
+<tr class="row-even"><td><p>213</p></td>
+<td><p>MAT_ISO-BUTANE_(ICRU-493)</p></td>
+<td><p>2</p></td>
+<td><p>0.00125</p></td>
+<td><p>1  10  6  4</p></td>
+</tr>
+<tr class="row-odd"><td><p>214</p></td>
+<td><p>MAT_ISO-OCTANE_(ICRU-494)</p></td>
+<td><p>2</p></td>
+<td><p>0.688</p></td>
+<td><p>6  8  1  18</p></td>
+</tr>
+<tr class="row-even"><td><p>215</p></td>
+<td><p>MAT_LITHIUM_NIOBATE_(ICRU-500)</p></td>
+<td><p>3</p></td>
+<td><p>4.3</p></td>
+<td><p>3  1  8  3  41  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>216</p></td>
+<td><p>MAT_DECENE_(ICRU-502)</p></td>
+<td><p>2</p></td>
+<td><p>0.741</p></td>
+<td><p>6  10  1  20</p></td>
+</tr>
+<tr class="row-even"><td><p>217</p></td>
+<td><p>MAT_HEPTENE_(ICRU-503)</p></td>
+<td><p>2</p></td>
+<td><p>0.697</p></td>
+<td><p>6  7  1  14</p></td>
+</tr>
+<tr class="row-odd"><td><p>218</p></td>
+<td><p>MAT_OCTENE_(ICRU-504)</p></td>
+<td><p>2</p></td>
+<td><p>0.715</p></td>
+<td><p>6  8  1  16</p></td>
+</tr>
+<tr class="row-even"><td><p>219</p></td>
+<td><p>MAT_LR-115_NUCLEAR_TRACK_DETECTOR_(ICRU-510)</p></td>
+<td><p>4</p></td>
+<td><p>1.48</p></td>
+<td><p>1  8  6  6  7  2  8  9</p></td>
+</tr>
+<tr class="row-odd"><td><p>220</p></td>
+<td><p>MAT_METHYLAMINE_(ICRU-512)</p></td>
+<td><p>3</p></td>
+<td><p>0.001</p></td>
+<td><p>1  5  6  1  7  1</p></td>
+</tr>
+<tr class="row-even"><td><p>221</p></td>
+<td><p>MAT_NIOBIUM_PENTOXIDE_(ICRU-518)</p></td>
+<td><p>2</p></td>
+<td><p>4.6</p></td>
+<td><p>41  2  8  5</p></td>
+</tr>
+<tr class="row-odd"><td><p>222</p></td>
+<td><p>MAT_NONANE_(ICRU-522)</p></td>
+<td><p>2</p></td>
+<td><p>0.718</p></td>
+<td><p>6  9  1  20</p></td>
+</tr>
+<tr class="row-even"><td><p>223</p></td>
+<td><p>MAT_OCTANE_(ICRU-524)</p></td>
+<td><p>2</p></td>
+<td><p>0.699</p></td>
+<td><p>6  8  1  18</p></td>
+</tr>
+<tr class="row-odd"><td><p>224</p></td>
+<td><p>MAT_PENTADECANE_(ICRU-527)</p></td>
+<td><p>2</p></td>
+<td><p>0.769</p></td>
+<td><p>6  15  1  32</p></td>
+</tr>
+<tr class="row-even"><td><p>225</p></td>
+<td><p>MAT_PENTYNE_(ICRU-533)</p></td>
+<td><p>2</p></td>
+<td><p>0.69</p></td>
+<td><p>6  5  1  8</p></td>
+</tr>
+<tr class="row-odd"><td><p>226</p></td>
+<td><p>MAT_PERFLUOROPROPANE_(ICRU-535)</p></td>
+<td><p>2</p></td>
+<td><p>0.00797</p></td>
+<td><p>6  3  9  8</p></td>
+</tr>
+<tr class="row-even"><td><p>227</p></td>
+<td><p>MAT_PLIOLITE_S-5A_(ICRU-550)</p></td>
+<td><p>2</p></td>
+<td><p>1.0</p></td>
+<td><p>1  14  6  12</p></td>
+</tr>
+<tr class="row-odd"><td><p>228</p></td>
+<td><p>MAT_PEN_POLYETHYLENE_NAPHTHALATE_(ICRU-560)</p></td>
+<td><p>3</p></td>
+<td><p>1.35</p></td>
+<td><p>6  14  1  10  8  4</p></td>
+</tr>
+<tr class="row-even"><td><p>229</p></td>
+<td><p>MAT_PHB_POLYHYDROXYBUTYRATE_(ICRU-562)</p></td>
+<td><p>3</p></td>
+<td><p>1.0</p></td>
+<td><p>6  4  1  6  8  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>230</p></td>
+<td><p>MAT_POLYSULFONE_(ICRU-564)</p></td>
+<td><p>4</p></td>
+<td><p>1.24</p></td>
+<td><p>1  22  6  26  8  4  16  1</p></td>
+</tr>
+<tr class="row-even"><td><p>231</p></td>
+<td><p>MAT_POLYVINYLTOLUENE_(ICRU-570)</p></td>
+<td><p>2</p></td>
+<td><p>1.03</p></td>
+<td><p>1  10  6  9</p></td>
+</tr>
+<tr class="row-odd"><td><p>232</p></td>
+<td><p>MAT_POTASSIUM_CHLORIDE_(ICRU-571)</p></td>
+<td><p>2</p></td>
+<td><p>1.984</p></td>
+<td><p>19  1  17  1</p></td>
+</tr>
+<tr class="row-even"><td><p>233</p></td>
+<td><p>MAT_POTASSIUM_TITANYL_ARSENATE_(ICRU-572)</p></td>
+<td><p>4</p></td>
+<td><p>3.45</p></td>
+<td><p>19  1  22  1  8  5  33  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>234</p></td>
+<td><p>MAT_PROPYNE_(ICRU-576)</p></td>
+<td><p>2</p></td>
+<td><p>0.00165</p></td>
+<td><p>1  4  6  3</p></td>
+</tr>
+<tr class="row-even"><td><p>235</p></td>
+<td><p>MAT_SCANDIUM_OXIDE__(ICRU-580)</p></td>
+<td><p>2</p></td>
+<td><p>3.864</p></td>
+<td><p>8  3  21  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>236</p></td>
+<td><p>MAT_SILICON_CARBIDE__(ICRU-590)</p></td>
+<td><p>2</p></td>
+<td><p>3.21</p></td>
+<td><p>6  1  14  1</p></td>
+</tr>
+<tr class="row-even"><td><p>237</p></td>
+<td><p>MAT_SILVER_GALLIUM_DISULFIDE__(ICRU-593)</p></td>
+<td><p>3</p></td>
+<td><p>1.0</p></td>
+<td><p>47  1  31  1  34  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>238</p></td>
+<td><p>MAT_SILVER_GALLIUM_DISULFIDE__(ICRU-594)</p></td>
+<td><p>3</p></td>
+<td><p>1.0</p></td>
+<td><p>47  1  31  1  16  2</p></td>
+</tr>
+<tr class="row-even"><td><p>239</p></td>
+<td><p>MAT_SULFUR_DIOXIDE_(ICRU-610)</p></td>
+<td><p>2</p></td>
+<td><p>0.00262</p></td>
+<td><p>16  1  8  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>240</p></td>
+<td><p>MAT_TANTALUM_PENTOXIDE__(ICRU-620)</p></td>
+<td><p>2</p></td>
+<td><p>8.2</p></td>
+<td><p>73  2  8  5</p></td>
+</tr>
+<tr class="row-even"><td><p>241</p></td>
+<td><p>MAT_TERPHENYL_(ICRU-630)</p></td>
+<td><p>2</p></td>
+<td><p>1.23</p></td>
+<td><p>6  18  1  14</p></td>
+</tr>
+<tr class="row-odd"><td><p>242</p></td>
+<td><p>MAT_TETRADECANE__(ICRU-632)</p></td>
+<td><p>2</p></td>
+<td><p>0.763</p></td>
+<td><p>6  14  1  30</p></td>
+</tr>
+<tr class="row-even"><td><p>243</p></td>
+<td><p>MAT_TITANIUM_OXIDE__(ICRU-652)</p></td>
+<td><p>2</p></td>
+<td><p>4.23</p></td>
+<td><p>8  2  22  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>244</p></td>
+<td><p>MAT_TRIMETHYLAMINE__(ICRU-656)</p></td>
+<td><p>3</p></td>
+<td><p>0.001</p></td>
+<td><p>6  3  1  9  7  1</p></td>
+</tr>
+<tr class="row-even"><td><p>245</p></td>
+<td><p>MAT_TRIDECANE__(ICRU-659)</p></td>
+<td><p>2</p></td>
+<td><p>0.756</p></td>
+<td><p>6  13  1  28</p></td>
+</tr>
+<tr class="row-odd"><td><p>246</p></td>
+<td><p>MAT_TUNGSTEN_TRIOXIDE_(ICRU-660)</p></td>
+<td><p>2</p></td>
+<td><p>7.2</p></td>
+<td><p>8  3  74  1</p></td>
+</tr>
+<tr class="row-even"><td><p>247</p></td>
+<td><p>MAT_UNDECANE_(ICRU-662)</p></td>
+<td><p>2</p></td>
+<td><p>0.74</p></td>
+<td><p>6  11  1  24</p></td>
+</tr>
+<tr class="row-odd"><td><p>248</p></td>
+<td><p>MAT_URANIUM_OXIDE_(ICRU-670)</p></td>
+<td><p>2</p></td>
+<td><p>10.97</p></td>
+<td><p>92  1  8  2</p></td>
+</tr>
+<tr class="row-even"><td><p>249</p></td>
+<td><p>MAT_VINYL_BROMIDE_(ICRU-680)</p></td>
+<td><p>3</p></td>
+<td><p>0.0046</p></td>
+<td><p>6  2  1  3  35  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>250</p></td>
+<td><p>MAT_VINYL_CHLORIDE_(ICRU-681)</p></td>
+<td><p>3</p></td>
+<td><p>0.001</p></td>
+<td><p>6  2  1  3  17  1</p></td>
+</tr>
+<tr class="row-even"><td><p>251</p></td>
+<td><p>MAT_VINYL_FLUORIDE_(ICRU-682)</p></td>
+<td><p>3</p></td>
+<td><p>0.001</p></td>
+<td><p>6  2  1  3  9  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>252</p></td>
+<td><p>MAT_ZINC_SELENIDE_(ICRU-700)</p></td>
+<td><p>2</p></td>
+<td><p>5.65</p></td>
+<td><p>30  1  34  1</p></td>
+</tr>
+<tr class="row-even"><td><p>253</p></td>
+<td><p>MAT_ZINC_SILICON_DIPHOSPHIDE_(ICRU-704)</p></td>
+<td><p>3</p></td>
+<td><p>1.0</p></td>
+<td><p>14  1  15  2  30  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>254</p></td>
+<td><p>MAT_ZINC_TELLURIDE_(ICRU-710)</p></td>
+<td><p>2</p></td>
+<td><p>5.9</p></td>
+<td><p>30  1  52  1</p></td>
+</tr>
+<tr class="row-even"><td><p>255</p></td>
+<td><p>MAT_ZIRCONIUM_DIOXIDE_(ICRU-712)</p></td>
+<td><p>2</p></td>
+<td><p>5.68</p></td>
+<td><p>40  1  8  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>256</p></td>
+<td><p>MAT_P_DIOXANE_(ICRU-740)</p></td>
+<td><p>3</p></td>
+<td><p>1.0337</p></td>
+<td><p>1  8  6  4  8  2</p></td>
+</tr>
+<tr class="row-even"><td><p>257</p></td>
+<td><p>MAT_DIMETHYL_AMINE_(ICRU-748)</p></td>
+<td><p>3</p></td>
+<td><p>0.001</p></td>
+<td><p>1  7  6  2  7  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>258</p></td>
+<td><p>MAT_DIMETHYL_DISULFIDE_(ICRU-750)</p></td>
+<td><p>3</p></td>
+<td><p>1.063</p></td>
+<td><p>1  6  6  2  16  2</p></td>
+</tr>
+<tr class="row-even"><td><p>259</p></td>
+<td><p>MAT_DIMETHYL_SULFIDE_(ICRU-754)</p></td>
+<td><p>3</p></td>
+<td><p>0.848</p></td>
+<td><p>1  6  6  2  16  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>260</p></td>
+<td><p>MAT_DODECANE_(ICRU-756)</p></td>
+<td><p>2</p></td>
+<td><p>0.749</p></td>
+<td><p>6  12  1  26</p></td>
+</tr>
+<tr class="row-even"><td><p>261</p></td>
+<td><p>MAT_ALCOHOL_ISOPROPYL_(ICRU-765)</p></td>
+<td><p>3</p></td>
+<td><p>0.781</p></td>
+<td><p>1  8  6  3  8  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>262</p></td>
+<td><p>MAT_ALCOHOL_BUTYL_(ICRU-767)</p></td>
+<td><p>3</p></td>
+<td><p>0.81</p></td>
+<td><p>1  10  6  4  8  1</p></td>
+</tr>
+<tr class="row-even"><td><p>263</p></td>
+<td><p>MAT_NO._769_ALCOHOL_AMYL</p></td>
+<td><p>3</p></td>
+<td><p>0.814</p></td>
+<td><p>1  12  6  5  8  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>264</p></td>
+<td><p>MAT_HEXANOL_(ICRU-771)</p></td>
+<td><p>3</p></td>
+<td><p>0.814</p></td>
+<td><p>1  14  6  6  8  1</p></td>
+</tr>
+<tr class="row-even"><td><p>265</p></td>
+<td><p>MAT_ALCOHOL_HEPTYL_(ICRU-773)</p></td>
+<td><p>3</p></td>
+<td><p>0.822</p></td>
+<td><p>1  16  6  7  8  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>266</p></td>
+<td><p>MAT_OCTANOL_(ICRU-775)</p></td>
+<td><p>3</p></td>
+<td><p>0.826</p></td>
+<td><p>1  18  6  8  8  1</p></td>
+</tr>
+<tr class="row-even"><td><p>267</p></td>
+<td><p>MAT_ALCOHOL_NONYL_(ICRU-777)</p></td>
+<td><p>3</p></td>
+<td><p>0.827</p></td>
+<td><p>1  20  6  9  8  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>268</p></td>
+<td><p>MAT_DECANOL_(ICRU-779)</p></td>
+<td><p>3</p></td>
+<td><p>0.8035</p></td>
+<td><p>1  22  6  10  8  1</p></td>
+</tr>
+<tr class="row-even"><td><p>269</p></td>
+<td><p>MAT_UNDECANOL_(ICRU-781)</p></td>
+<td><p>3</p></td>
+<td><p>0.8035</p></td>
+<td><p>1  24  6  11  8  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>270</p></td>
+<td><p>MAT_ACETICACID</p></td>
+<td><p>3</p></td>
+<td><p>1.0492</p></td>
+<td><p>1  4  6  2  8  2</p></td>
+</tr>
+<tr class="row-even"><td><p>271</p></td>
+<td><p>MAT_ALCOHOL-METHYL_(ICRU-305)</p></td>
+<td><p>3</p></td>
+<td><p>0.7914</p></td>
+<td><p>1  4  6  1  8  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>272</p></td>
+<td><p>MAT_ALCOHOL_ETHYL_(ICRU-303)</p></td>
+<td><p>3</p></td>
+<td><p>0.7893</p></td>
+<td><p>1  6  6  2  8  1</p></td>
+</tr>
+<tr class="row-even"><td><p>273</p></td>
+<td><p>MAT_ALCOHOL_PROPYL_(ICRU-307)</p></td>
+<td><p>3</p></td>
+<td><p>0.8035</p></td>
+<td><p>1  8  6  3  8  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>274</p></td>
+<td><p>MAT_ALCOHOL_UNDECANOL</p></td>
+<td><p>3</p></td>
+<td><p>0.8298</p></td>
+<td><p>1  24  6  11  8  1</p></td>
+</tr>
+<tr class="row-even"><td><p>275</p></td>
+<td><p>MAT_ALLENE_(ICRU-309)</p></td>
+<td><p>2</p></td>
+<td><p>0.00125</p></td>
+<td><p>1  4  6  3</p></td>
+</tr>
+<tr class="row-odd"><td><p>276</p></td>
+<td><p>MAT_AMMONIA_(ICRU-310)</p></td>
+<td><p>2</p></td>
+<td><p>0.00125</p></td>
+<td><p>1  3  7  1</p></td>
+</tr>
+<tr class="row-even"><td><p>277</p></td>
+<td><p>MAT_ANILINE</p></td>
+<td><p>3</p></td>
+<td><p>1.026</p></td>
+<td><p>1  7  6  6  7  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>278</p></td>
+<td><p>MAT_BENZENE_(ICRU-329)</p></td>
+<td><p>2</p></td>
+<td><p>0.87865</p></td>
+<td><p>1  6  6  6</p></td>
+</tr>
+<tr class="row-even"><td><p>279</p></td>
+<td><p>MAT_BICYLO_2_2_1</p></td>
+<td><p>2</p></td>
+<td><p>0.9064</p></td>
+<td><p>1  8  6  7</p></td>
+</tr>
+<tr class="row-odd"><td><p>280</p></td>
+<td><p>MAT_BUTANE_N-BUTANE_(ICRU-340)</p></td>
+<td><p>2</p></td>
+<td><p>0.00125</p></td>
+<td><p>1  10  6  4</p></td>
+</tr>
+<tr class="row-even"><td><p>281</p></td>
+<td><p>MAT_1-3_BUTADIENE_(ICRU-334)</p></td>
+<td><p>2</p></td>
+<td><p>0.00125</p></td>
+<td><p>1  6  6  4</p></td>
+</tr>
+<tr class="row-odd"><td><p>282</p></td>
+<td><p>MAT_2_BUTANONE_(ICRU-716)</p></td>
+<td><p>3</p></td>
+<td><p>0.8054</p></td>
+<td><p>1  8  6  4  8  1</p></td>
+</tr>
+<tr class="row-even"><td><p>283</p></td>
+<td><p>MAT_BUTYRALDEHYDE_(ICRU-718)</p></td>
+<td><p>3</p></td>
+<td><p>0.817</p></td>
+<td><p>1  8  6  4  8  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>284</p></td>
+<td><p>MAT_CARBON_TETRACHLORIDE_(ICRU-360)</p></td>
+<td><p>2</p></td>
+<td><p>1.594</p></td>
+<td><p>6  1  17  4</p></td>
+</tr>
+<tr class="row-even"><td><p>285</p></td>
+<td><p>MAT_CARBON_TETRAFLUORIDE_(ICRU-370)</p></td>
+<td><p>2</p></td>
+<td><p>0.00125</p></td>
+<td><p>6  1  9  4</p></td>
+</tr>
+<tr class="row-odd"><td><p>286</p></td>
+<td><p>MAT_1_CHLOROBUTANE</p></td>
+<td><p>3</p></td>
+<td><p>0.8862</p></td>
+<td><p>1  9  6  4  17  1</p></td>
+</tr>
+<tr class="row-even"><td><p>287</p></td>
+<td><p>MAT_1_CHLORO_HEXADECANE</p></td>
+<td><p>3</p></td>
+<td><p>0.8652</p></td>
+<td><p>1  33  6  16  17  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>288</p></td>
+<td><p>MAT_1_CHLORO_HEXANE</p></td>
+<td><p>3</p></td>
+<td><p>0.8785</p></td>
+<td><p>1  13  6  6  17  1</p></td>
+</tr>
+<tr class="row-even"><td><p>289</p></td>
+<td><p>MAT_2_CHLORO_2_METHYLPROPANE</p></td>
+<td><p>3</p></td>
+<td><p>0.842</p></td>
+<td><p>1  9  6  4  17  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>290</p></td>
+<td><p>MAT_1_CHLORO_PROPANE</p></td>
+<td><p>3</p></td>
+<td><p>0.8909</p></td>
+<td><p>1  7  6  3  17  1</p></td>
+</tr>
+<tr class="row-even"><td><p>291</p></td>
+<td><p>MAT_CYCLOBUTANE</p></td>
+<td><p>2</p></td>
+<td><p>0.00125</p></td>
+<td><p>1  8  6  4</p></td>
+</tr>
+<tr class="row-odd"><td><p>292</p></td>
+<td><p>MAT_1_3_5_CYCLOHEPTATRIENE</p></td>
+<td><p>2</p></td>
+<td><p>0.8875</p></td>
+<td><p>1  8  6  7</p></td>
+</tr>
+<tr class="row-even"><td><p>293</p></td>
+<td><p>MAT_1_3_CYCLOHEXADIENE_(ICRU-394)</p></td>
+<td><p>2</p></td>
+<td><p>0.8405</p></td>
+<td><p>1  8  6  6</p></td>
+</tr>
+<tr class="row-odd"><td><p>294</p></td>
+<td><p>MAT_CYCLOHEXANONE_(ICRU-728)</p></td>
+<td><p>3</p></td>
+<td><p>0.9478</p></td>
+<td><p>1  10  6  6  8  1</p></td>
+</tr>
+<tr class="row-even"><td><p>295</p></td>
+<td><p>MAT_CYCLOHEXENE_(ICRU-729)</p></td>
+<td><p>2</p></td>
+<td><p>0.8102</p></td>
+<td><p>1  10  6  6</p></td>
+</tr>
+<tr class="row-odd"><td><p>296</p></td>
+<td><p>MAT_CYCLOOCTANE_(ICRU-731)</p></td>
+<td><p>2</p></td>
+<td><p>0.8349</p></td>
+<td><p>1  16  6  8</p></td>
+</tr>
+<tr class="row-even"><td><p>297</p></td>
+<td><p>MAT_CYCLOOCTENE</p></td>
+<td><p>2</p></td>
+<td><p>0.8472</p></td>
+<td><p>1  14  6  8</p></td>
+</tr>
+<tr class="row-odd"><td><p>298</p></td>
+<td><p>MAT_CYCLOPENTANE_(ICRU-403)</p></td>
+<td><p>2</p></td>
+<td><p>0.7457</p></td>
+<td><p>1  10  6  5</p></td>
+</tr>
+<tr class="row-even"><td><p>299</p></td>
+<td><p>MAT_CYCLOPENTENE_(ICRU-405)</p></td>
+<td><p>2</p></td>
+<td><p>0.772</p></td>
+<td><p>1  8  6  5</p></td>
+</tr>
+<tr class="row-odd"><td><p>300</p></td>
+<td><p>MAT_CYCLOPROPANE_(ICRU-410)</p></td>
+<td><p>2</p></td>
+<td><p>0.00174</p></td>
+<td><p>1  6  6  3</p></td>
+</tr>
+<tr class="row-even"><td><p>301</p></td>
+<td><p>MAT_CYCLOPROPENE</p></td>
+<td><p>2</p></td>
+<td><p>0.00125</p></td>
+<td><p>1  4  6  3</p></td>
+</tr>
+<tr class="row-odd"><td><p>302</p></td>
+<td><p>MAT_N_DECANE_(ICRU-411)</p></td>
+<td><p>2</p></td>
+<td><p>0.73</p></td>
+<td><p>1  22  6  10</p></td>
+</tr>
+<tr class="row-even"><td><p>303</p></td>
+<td><p>MAT_1_DECENE</p></td>
+<td><p>2</p></td>
+<td><p>0.7408</p></td>
+<td><p>1  20  6  10</p></td>
+</tr>
+<tr class="row-odd"><td><p>304</p></td>
+<td><p>MAT_1_2_DICHLOROETHANE</p></td>
+<td><p>3</p></td>
+<td><p>1.2351</p></td>
+<td><p>1  4  6  2  17  2</p></td>
+</tr>
+<tr class="row-even"><td><p>305</p></td>
+<td><p>MAT_1_2_DIFLUOROETHANE_(ICRU-418)</p></td>
+<td><p>3</p></td>
+<td><p>0.00125</p></td>
+<td><p>1  4  6  2  9  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>306</p></td>
+<td><p>MAT_1_2_DIFLUOROETHENE_(ICRU-417)</p></td>
+<td><p>3</p></td>
+<td><p>0.00125</p></td>
+<td><p>1  2  6  2  9  2</p></td>
+</tr>
+<tr class="row-even"><td><p>307</p></td>
+<td><p>MAT_ETHANE_(ICRU-424)</p></td>
+<td><p>2</p></td>
+<td><p>0.00125</p></td>
+<td><p>1  6  6  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>308</p></td>
+<td><p>MAT_1_2_ETHANEDIOL</p></td>
+<td><p>3</p></td>
+<td><p>1.1088</p></td>
+<td><p>1  6  6  2  8  2</p></td>
+</tr>
+<tr class="row-even"><td><p>309</p></td>
+<td><p>MAT_ETHANE_HEXAFLUORIDE</p></td>
+<td><p>2</p></td>
+<td><p>0.00125</p></td>
+<td><p>6  2  9  6</p></td>
+</tr>
+<tr class="row-odd"><td><p>310</p></td>
+<td><p>MAT_ETHER_DIMETHYL_(ICRU-752)</p></td>
+<td><p>3</p></td>
+<td><p>0.00125</p></td>
+<td><p>1  6  6  2  8  1</p></td>
+</tr>
+<tr class="row-even"><td><p>311</p></td>
+<td><p>MAT_ETHER_VINYL_METHYL_(ICRU-684)</p></td>
+<td><p>3</p></td>
+<td><p>0.7725</p></td>
+<td><p>1  6  6  3  8  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>312</p></td>
+<td><p>MAT_ETHER_DIETHYL_(ICRU-735)</p></td>
+<td><p>3</p></td>
+<td><p>0.71378</p></td>
+<td><p>1  10  6  4  8  1</p></td>
+</tr>
+<tr class="row-even"><td><p>313</p></td>
+<td><p>MAT_ETHYLENE_OXIDE_(ICRU-432)</p></td>
+<td><p>3</p></td>
+<td><p>0.8824</p></td>
+<td><p>1  4  6  2  8  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>314</p></td>
+<td><p>MAT_ETHYLENE_SULFIDE_(ICRU-434)</p></td>
+<td><p>3</p></td>
+<td><p>0.00125</p></td>
+<td><p>1  4  6  2  16  1</p></td>
+</tr>
+<tr class="row-even"><td><p>315</p></td>
+<td><p>MAT_FORMICACID</p></td>
+<td><p>3</p></td>
+<td><p>1.22</p></td>
+<td><p>1  2  6  1  8  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>316</p></td>
+<td><p>MAT_FORMALDEHYDE</p></td>
+<td><p>3</p></td>
+<td><p>0.815</p></td>
+<td><p>1  2  6  1  8  1</p></td>
+</tr>
+<tr class="row-even"><td><p>317</p></td>
+<td><p>MAT_HYDROGEN_SULFIDE_(ICRU-485)</p></td>
+<td><p>2</p></td>
+<td><p>0.00125</p></td>
+<td><p>1  2  16  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>318</p></td>
+<td><p>MAT_METHYL_SULFIDE</p></td>
+<td><p>3</p></td>
+<td><p>0.8483</p></td>
+<td><p>1  6  6  2  16  1</p></td>
+</tr>
+<tr class="row-even"><td><p>319</p></td>
+<td><p>MAT_METHANE_DICHLORO_DIFLUORO</p></td>
+<td><p>3</p></td>
+<td><p>0.00518</p></td>
+<td><p>6  1  9  2 17  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>320</p></td>
+<td><p>MAT_METHANE_DICHLORO_FLUORO</p></td>
+<td><p>4</p></td>
+<td><p>0.00125</p></td>
+<td><p>1  1  6  1  9  1  17  2</p></td>
+</tr>
+<tr class="row-even"><td><p>321</p></td>
+<td><p>MAT_2_METHY_L_1_3_BUTADIENE</p></td>
+<td><p>2</p></td>
+<td><p>0.681</p></td>
+<td><p>1  8  6  5</p></td>
+</tr>
+<tr class="row-odd"><td><p>322</p></td>
+<td><p>MAT_NITRIC_OXIDE_(ICRU-520)</p></td>
+<td><p>2</p></td>
+<td><p>0.00125</p></td>
+<td><p>7  1  8  1</p></td>
+</tr>
+<tr class="row-even"><td><p>323</p></td>
+<td><p>MAT_NITROUS_OXIDE_(ICRU-521)</p></td>
+<td><p>2</p></td>
+<td><p>0.00125</p></td>
+<td><p>7  2  8  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>324</p></td>
+<td><p>MAT_OCTANOIC_ACID</p></td>
+<td><p>3</p></td>
+<td><p>0.9088</p></td>
+<td><p>1  16  6  8  8  2</p></td>
+</tr>
+<tr class="row-even"><td><p>325</p></td>
+<td><p>MAT_N_PENTANE_(ICRU-528)</p></td>
+<td><p>2</p></td>
+<td><p>0.6262</p></td>
+<td><p>1  12  6  5</p></td>
+</tr>
+<tr class="row-odd"><td><p>326</p></td>
+<td><p>MAT_N_PENTADECANE</p></td>
+<td><p>2</p></td>
+<td><p>0.7865</p></td>
+<td><p>1  32  6  15</p></td>
+</tr>
+<tr class="row-even"><td><p>327</p></td>
+<td><p>MAT_1_5_PENTANEDIOL</p></td>
+<td><p>3</p></td>
+<td><p>0.9939</p></td>
+<td><p>1  12  6  5  8  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>328</p></td>
+<td><p>MAT_3-PENTANONE_(ICRU-742)</p></td>
+<td><p>3</p></td>
+<td><p>0.8138</p></td>
+<td><p>1  10  6  5  8  1</p></td>
+</tr>
+<tr class="row-even"><td><p>329</p></td>
+<td><p>MAT_1_PENTENE_(ICRU-532)</p></td>
+<td><p>2</p></td>
+<td><p>0.6405</p></td>
+<td><p>1  10  6  5</p></td>
+</tr>
+<tr class="row-odd"><td><p>330</p></td>
+<td><p>MAT_PHENYLACETYLENE</p></td>
+<td><p>2</p></td>
+<td><p>0.9281</p></td>
+<td><p>1  6  6  8</p></td>
+</tr>
+<tr class="row-even"><td><p>331</p></td>
+<td><p>MAT_1_3_PROPANEDIOL</p></td>
+<td><p>3</p></td>
+<td><p>1.0597</p></td>
+<td><p>1  8  6  3  8  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>332</p></td>
+<td><p>MAT_2_PROPANOL</p></td>
+<td><p>3</p></td>
+<td><p>0.7855</p></td>
+<td><p>1  8  6  3  8  1</p></td>
+</tr>
+<tr class="row-even"><td><p>333</p></td>
+<td><p>MAT_PROPYLAMINE</p></td>
+<td><p>3</p></td>
+<td><p>0.7173</p></td>
+<td><p>1  9  6  3  7  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>334</p></td>
+<td><p>MAT_PROPYLENE_(ICRU-574)</p></td>
+<td><p>2</p></td>
+<td><p>0.514</p></td>
+<td><p>1  6  6  3</p></td>
+</tr>
+<tr class="row-even"><td><p>335</p></td>
+<td><p>MAT_PROPYLENE_OXIDE_(ICRU-800)</p></td>
+<td><p>3</p></td>
+<td><p>0.859</p></td>
+<td><p>1  6  6  3  8  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>336</p></td>
+<td><p>MAT_PROPYLENE_SULFIDE_(ICRU-802)</p></td>
+<td><p>3</p></td>
+<td><p>0.941</p></td>
+<td><p>1  6  6  3  16  1</p></td>
+</tr>
+<tr class="row-even"><td><p>337</p></td>
+<td><p>MAT_SULFUR_HEXAFLUORIDE_(ICRU-614)</p></td>
+<td><p>2</p></td>
+<td><p>0.00125</p></td>
+<td><p>9  6  16  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>338</p></td>
+<td><p>MAT_STYRENE_(ICRU-600)</p></td>
+<td><p>2</p></td>
+<td><p>0.906</p></td>
+<td><p>1  8  6  8</p></td>
+</tr>
+<tr class="row-even"><td><p>339</p></td>
+<td><p>MAT_THIOPHENE_(ICRU-640)</p></td>
+<td><p>3</p></td>
+<td><p>1.0649</p></td>
+<td><p>1  4  6  4  16  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>340</p></td>
+<td><p>MAT_TRIMETHYLENE_SULFIDE_(ICRU-658)</p></td>
+<td><p>3</p></td>
+<td><p>1.02</p></td>
+<td><p>1  6  6  3  16  1</p></td>
+</tr>
+<tr class="row-even"><td><p>341</p></td>
+<td><p>MAT_XYLENE</p></td>
+<td><p>2</p></td>
+<td><p>0.8611</p></td>
+<td><p>1  10  6  8</p></td>
+</tr>
+<tr class="row-odd"><td><p>342</p></td>
+<td><p>MAT_HYDROGEN</p></td>
+<td><p>1</p></td>
+<td><p>9e-05</p></td>
+<td><p>1  2</p></td>
+</tr>
+<tr class="row-even"><td><p>343</p></td>
+<td><p>MAT_HELIUM</p></td>
+<td><p>1</p></td>
+<td><p>0.000178</p></td>
+<td><p>2  1</p></td>
+</tr>
+<tr class="row-odd"><td><p>344</p></td>
+<td><p>MAT_CARBON</p></td>
+<td><p>1</p></td>
+<td><p>2.0</p></td>
+<td><p>6  6</p></td>
+</tr>
+<tr class="row-even"><td><p>345</p></td>
+<td><p>MAT_NITROGEN</p></td>
+<td><p>1</p></td>
+<td><p>0.001251</p></td>
+<td><p>7  2</p></td>
+</tr>
+<tr class="row-odd"><td><p>346</p></td>
+<td><p>MAT_OXYGEN</p></td>
+<td><p>1</p></td>
+<td><p>0.001429</p></td>
+<td><p>8  2</p></td>
+</tr>
+<tr class="row-even"><td><p>347</p></td>
+<td><p>MAT_A-150_TISSUE</p></td>
+<td><p>6</p></td>
+<td><p>1.127</p></td>
+<td><p>1 0.101327  6 0.7755  7 0.035057  8 0.0523159  9 0.017422  20 0.018378</p></td>
+</tr>
+<tr class="row-odd"><td><p>348</p></td>
+<td><p>MAT_ACETONE</p></td>
+<td><p>3</p></td>
+<td><p>0.7899</p></td>
+<td><p>6 3  1 6  8 1</p></td>
+</tr>
+<tr class="row-even"><td><p>349</p></td>
+<td><p>MAT_ACETYLENE</p></td>
+<td><p>2</p></td>
+<td><p>0.001097</p></td>
+<td><p>6 2  1 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>350</p></td>
+<td><p>MAT_ADENINE</p></td>
+<td><p>3</p></td>
+<td><p>1.6</p></td>
+<td><p>6 5  1 5  7 5</p></td>
+</tr>
+<tr class="row-even"><td><p>351</p></td>
+<td><p>MAT_ADIPOSE_TISSUE_ICRP</p></td>
+<td><p>7</p></td>
+<td><p>0.95</p></td>
+<td><p>1 0.114  6 0.598  7 0.007  8 0.278  11 0.001  16 0.001  17 0.001</p></td>
+</tr>
+<tr class="row-odd"><td><p>352</p></td>
+<td><p>MAT_AIR</p></td>
+<td><p>4</p></td>
+<td><p>0.001205</p></td>
+<td><p>6 0.000124  7 0.755268  8 0.231781  18 0.012827</p></td>
+</tr>
+<tr class="row-even"><td><p>353</p></td>
+<td><p>MAT_ALANINE</p></td>
+<td><p>4</p></td>
+<td><p>1.42</p></td>
+<td><p>6 3  1 7  7 1  8 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>354</p></td>
+<td><p>MAT_ALUMINUM_OXIDE</p></td>
+<td><p>2</p></td>
+<td><p>3.97</p></td>
+<td><p>13 2  8 3</p></td>
+</tr>
+<tr class="row-even"><td><p>355</p></td>
+<td><p>MAT_AMBER</p></td>
+<td><p>3</p></td>
+<td><p>1.1</p></td>
+<td><p>1 0.10593  6 0.788974  8 0.105096</p></td>
+</tr>
+<tr class="row-odd"><td><p>356</p></td>
+<td><p>MAT_AMMONIA</p></td>
+<td><p>2</p></td>
+<td><p>0.000826</p></td>
+<td><p>7 1  1 3</p></td>
+</tr>
+<tr class="row-even"><td><p>357</p></td>
+<td><p>MAT_B-100_BONE</p></td>
+<td><p>6</p></td>
+<td><p>1.45</p></td>
+<td><p>1 0.0654709  6 0.536944  7 0.0215  8 0.032085  9 0.167411  20 0.176589</p></td>
+</tr>
+<tr class="row-odd"><td><p>358</p></td>
+<td><p>MAT_BARIUM_FLUORIDE</p></td>
+<td><p>2</p></td>
+<td><p>4.89</p></td>
+<td><p>56 1  9 2</p></td>
+</tr>
+<tr class="row-even"><td><p>359</p></td>
+<td><p>MAT_BARIUM_SULFATE</p></td>
+<td><p>3</p></td>
+<td><p>4.5</p></td>
+<td><p>56 1  16 1  8 4</p></td>
+</tr>
+<tr class="row-odd"><td><p>360</p></td>
+<td><p>MAT_BENZENE</p></td>
+<td><p>2</p></td>
+<td><p>0.87865</p></td>
+<td><p>6 6  1 6</p></td>
+</tr>
+<tr class="row-even"><td><p>361</p></td>
+<td><p>MAT_BERYLLIUM_OXIDE</p></td>
+<td><p>2</p></td>
+<td><p>3.01</p></td>
+<td><p>4 1  8 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>362</p></td>
+<td><p>MAT_BGO</p></td>
+<td><p>3</p></td>
+<td><p>7.13</p></td>
+<td><p>83 4  32 3  8 12</p></td>
+</tr>
+<tr class="row-even"><td><p>363</p></td>
+<td><p>MAT_BLOOD_ICRP</p></td>
+<td><p>10</p></td>
+<td><p>1.06</p></td>
+<td><p>1 0.102  6 0.11  7 0.033  8 0.745  11 0.001  15 0.001  16 0.002  17 0.003  19 0.002  26 0.001</p></td>
+</tr>
+<tr class="row-odd"><td><p>364</p></td>
+<td><p>MAT_BONE_COMPACT_ICRU</p></td>
+<td><p>8</p></td>
+<td><p>1.85</p></td>
+<td><p>1 0.064  6 0.278  7 0.027  8 0.41  12 0.002  15 0.07  16 0.002  20 0.147</p></td>
+</tr>
+<tr class="row-even"><td><p>365</p></td>
+<td><p>MAT_BONE_CORTICAL_ICRP</p></td>
+<td><p>9</p></td>
+<td><p>1.92</p></td>
+<td><p>1 0.034  6 0.155  7 0.042  8 0.435  11 0.001  12 0.002  15 0.103  16 0.003  20 0.225</p></td>
+</tr>
+<tr class="row-odd"><td><p>366</p></td>
+<td><p>MAT_BORON_CARBIDE</p></td>
+<td><p>2</p></td>
+<td><p>2.52</p></td>
+<td><p>5 4  6 1</p></td>
+</tr>
+<tr class="row-even"><td><p>367</p></td>
+<td><p>MAT_BORON_OXIDE</p></td>
+<td><p>2</p></td>
+<td><p>1.812</p></td>
+<td><p>5 2  8 3</p></td>
+</tr>
+<tr class="row-odd"><td><p>368</p></td>
+<td><p>MAT_BRAIN_ICRP</p></td>
+<td><p>9</p></td>
+<td><p>1.04</p></td>
+<td><p>1 0.107  6 0.145  7 0.022  8 0.712  11 0.002  15 0.004  16 0.002  17 0.003  19 0.003</p></td>
+</tr>
+<tr class="row-even"><td><p>369</p></td>
+<td><p>MAT_BUTANE</p></td>
+<td><p>2</p></td>
+<td><p>0.002493</p></td>
+<td><p>6 4  1 10</p></td>
+</tr>
+<tr class="row-odd"><td><p>370</p></td>
+<td><p>MAT_N-BUTYL_ALCOHOL</p></td>
+<td><p>3</p></td>
+<td><p>0.8098</p></td>
+<td><p>6 4  1 10  8 1</p></td>
+</tr>
+<tr class="row-even"><td><p>371</p></td>
+<td><p>MAT_C-552</p></td>
+<td><p>5</p></td>
+<td><p>1.76</p></td>
+<td><p>1 0.02468  6 0.501611  8 0.004527  9 0.465209  14 0.003973</p></td>
+</tr>
+<tr class="row-odd"><td><p>372</p></td>
+<td><p>MAT_CADMIUM_TELLURIDE</p></td>
+<td><p>2</p></td>
+<td><p>6.2</p></td>
+<td><p>48 1  52 1</p></td>
+</tr>
+<tr class="row-even"><td><p>373</p></td>
+<td><p>MAT_CADMIUM_TUNGSTATE</p></td>
+<td><p>3</p></td>
+<td><p>7.9</p></td>
+<td><p>48 1  74 1  8 4</p></td>
+</tr>
+<tr class="row-odd"><td><p>374</p></td>
+<td><p>MAT_CALCIUM_CARBONATE</p></td>
+<td><p>3</p></td>
+<td><p>2.8</p></td>
+<td><p>20 1  6 1  8 3</p></td>
+</tr>
+<tr class="row-even"><td><p>375</p></td>
+<td><p>MAT_CALCIUM_FLUORIDE</p></td>
+<td><p>2</p></td>
+<td><p>3.18</p></td>
+<td><p>20 1  9 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>376</p></td>
+<td><p>MAT_CALCIUM_OXIDE</p></td>
+<td><p>2</p></td>
+<td><p>3.3</p></td>
+<td><p>20 1  8 1</p></td>
+</tr>
+<tr class="row-even"><td><p>377</p></td>
+<td><p>MAT_CALCIUM_SULFATE</p></td>
+<td><p>3</p></td>
+<td><p>2.96</p></td>
+<td><p>20 1  16 1  8 4</p></td>
+</tr>
+<tr class="row-odd"><td><p>378</p></td>
+<td><p>MAT_CALCIUM_TUNGSTATE</p></td>
+<td><p>3</p></td>
+<td><p>6.062</p></td>
+<td><p>20 1  74 1  8 4</p></td>
+</tr>
+<tr class="row-even"><td><p>379</p></td>
+<td><p>MAT_CARBON_DIOXIDE</p></td>
+<td><p>2</p></td>
+<td><p>0.001842</p></td>
+<td><p>6 1  8 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>380</p></td>
+<td><p>MAT_CARBON_TETRACHLORIDE</p></td>
+<td><p>2</p></td>
+<td><p>1.594</p></td>
+<td><p>6 1  17 4</p></td>
+</tr>
+<tr class="row-even"><td><p>381</p></td>
+<td><p>MAT_CELLULOSE_CELLOPHANE</p></td>
+<td><p>3</p></td>
+<td><p>1.42</p></td>
+<td><p>6 6  1 10  8 5</p></td>
+</tr>
+<tr class="row-odd"><td><p>382</p></td>
+<td><p>MAT_CELLULOSE_BUTYRATE</p></td>
+<td><p>3</p></td>
+<td><p>1.2</p></td>
+<td><p>1 0.067125  6 0.545403  8 0.387472</p></td>
+</tr>
+<tr class="row-even"><td><p>383</p></td>
+<td><p>MAT_CELLULOSE_NITRATE</p></td>
+<td><p>4</p></td>
+<td><p>1.49</p></td>
+<td><p>1 0.029216  6 0.271296  7 0.121276  8 0.578212</p></td>
+</tr>
+<tr class="row-odd"><td><p>384</p></td>
+<td><p>MAT_CERIC_SULFATE</p></td>
+<td><p>5</p></td>
+<td><p>1.03</p></td>
+<td><p>1 0.107596  7 0.0008  8 0.874976  16 0.014627  58 0.002001</p></td>
+</tr>
+<tr class="row-even"><td><p>385</p></td>
+<td><p>MAT_CESIUM_FLUORIDE</p></td>
+<td><p>2</p></td>
+<td><p>4.115</p></td>
+<td><p>55 1  9 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>386</p></td>
+<td><p>MAT_CESIUM_IODIDE</p></td>
+<td><p>2</p></td>
+<td><p>4.51</p></td>
+<td><p>55 1  53 1</p></td>
+</tr>
+<tr class="row-even"><td><p>387</p></td>
+<td><p>MAT_CHLOROBENZENE</p></td>
+<td><p>3</p></td>
+<td><p>1.1058</p></td>
+<td><p>6 6  1 5  17 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>388</p></td>
+<td><p>MAT_CHLOROFORM</p></td>
+<td><p>3</p></td>
+<td><p>1.4832</p></td>
+<td><p>6 1  1 1  17 3</p></td>
+</tr>
+<tr class="row-even"><td><p>389</p></td>
+<td><p>MAT_CYCLOHEXANE</p></td>
+<td><p>2</p></td>
+<td><p>0.779</p></td>
+<td><p>6 6  1 12</p></td>
+</tr>
+<tr class="row-odd"><td><p>390</p></td>
+<td><p>MAT_1-2-DICHLOROBENZENE</p></td>
+<td><p>3</p></td>
+<td><p>1.3048</p></td>
+<td><p>6 6  1 4  17 2</p></td>
+</tr>
+<tr class="row-even"><td><p>391</p></td>
+<td><p>MAT_DICHLORODIETHYL_ETHER</p></td>
+<td><p>4</p></td>
+<td><p>1.2199</p></td>
+<td><p>6 4  1 8  8 1  17 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>392</p></td>
+<td><p>MAT_1-2-DICHLOROETHANE</p></td>
+<td><p>3</p></td>
+<td><p>1.2351</p></td>
+<td><p>6 2  1 4  17 2</p></td>
+</tr>
+<tr class="row-even"><td><p>393</p></td>
+<td><p>MAT_DIETHYL_ETHER</p></td>
+<td><p>3</p></td>
+<td><p>0.71378</p></td>
+<td><p>6 4  1 10  8 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>394</p></td>
+<td><p>MAT_N-N-DIMETHYL_FORMAMIDE</p></td>
+<td><p>4</p></td>
+<td><p>0.9487</p></td>
+<td><p>6 3  1 7  7 1  8 1</p></td>
+</tr>
+<tr class="row-even"><td><p>395</p></td>
+<td><p>MAT_DIMETHYL_SULFOXIDE</p></td>
+<td><p>4</p></td>
+<td><p>1.1014</p></td>
+<td><p>6 2  1 6  8 1  16 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>396</p></td>
+<td><p>MAT_ETHANE</p></td>
+<td><p>2</p></td>
+<td><p>0.001253</p></td>
+<td><p>6 2  1 6</p></td>
+</tr>
+<tr class="row-even"><td><p>397</p></td>
+<td><p>MAT_ETHYL_ALCOHOL</p></td>
+<td><p>3</p></td>
+<td><p>0.7893</p></td>
+<td><p>6 2  1 6  8 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>398</p></td>
+<td><p>MAT_ETHYL_CELLULOSE</p></td>
+<td><p>3</p></td>
+<td><p>1.13</p></td>
+<td><p>1 0.090027  6 0.585182  8 0.324791</p></td>
+</tr>
+<tr class="row-even"><td><p>399</p></td>
+<td><p>MAT_ETHYLENE</p></td>
+<td><p>2</p></td>
+<td><p>0.001175</p></td>
+<td><p>6 2  1 4</p></td>
+</tr>
+<tr class="row-odd"><td><p>400</p></td>
+<td><p>MAT_EYE_LENS_ICRP</p></td>
+<td><p>8</p></td>
+<td><p>1.07</p></td>
+<td><p>1 0.096  6 0.195  7 0.057  8 0.646  11 0.001  15 0.001  16 0.003  17 0.001</p></td>
+</tr>
+<tr class="row-even"><td><p>401</p></td>
+<td><p>MAT_FERRIC_OXIDE</p></td>
+<td><p>2</p></td>
+<td><p>5.2</p></td>
+<td><p>26 2  8 3</p></td>
+</tr>
+<tr class="row-odd"><td><p>402</p></td>
+<td><p>MAT_FERROBORIDE</p></td>
+<td><p>2</p></td>
+<td><p>7.15</p></td>
+<td><p>26 1  5 1</p></td>
+</tr>
+<tr class="row-even"><td><p>403</p></td>
+<td><p>MAT_FERROUS_OXIDE</p></td>
+<td><p>2</p></td>
+<td><p>5.7</p></td>
+<td><p>26 1  8 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>404</p></td>
+<td><p>MAT_FERROUS_SULFATE</p></td>
+<td><p>7</p></td>
+<td><p>1.024</p></td>
+<td><p>1 0.108259  7 2.7  8 0.878636  11 2.2  16 0.012968  17 3.4  26 5.4</p></td>
+</tr>
+<tr class="row-even"><td><p>405</p></td>
+<td><p>MAT_FREON-12</p></td>
+<td><p>3</p></td>
+<td><p>1.12</p></td>
+<td><p>6 0.099335  9 0.314247  17 0.586418</p></td>
+</tr>
+<tr class="row-odd"><td><p>406</p></td>
+<td><p>MAT_FREON-12B2</p></td>
+<td><p>3</p></td>
+<td><p>1.8</p></td>
+<td><p>6 0.057245  9 0.181096  35 0.761659</p></td>
+</tr>
+<tr class="row-even"><td><p>407</p></td>
+<td><p>MAT_FREON-13</p></td>
+<td><p>3</p></td>
+<td><p>0.95</p></td>
+<td><p>6 0.114983  9 0.545621  17 0.339396</p></td>
+</tr>
+<tr class="row-odd"><td><p>408</p></td>
+<td><p>MAT_FREON-13B1</p></td>
+<td><p>3</p></td>
+<td><p>1.5</p></td>
+<td><p>6 1  9 3  35 1</p></td>
+</tr>
+<tr class="row-even"><td><p>409</p></td>
+<td><p>MAT_FREON-13I1</p></td>
+<td><p>3</p></td>
+<td><p>1.8</p></td>
+<td><p>6 0.061309  9 0.290924  53 0.647767</p></td>
+</tr>
+<tr class="row-odd"><td><p>410</p></td>
+<td><p>MAT_GADOLINIUM_OXYSULFIDE</p></td>
+<td><p>3</p></td>
+<td><p>7.44</p></td>
+<td><p>64 2  8 2  16 1</p></td>
+</tr>
+<tr class="row-even"><td><p>411</p></td>
+<td><p>MAT_GALLIUM_ARSENIDE</p></td>
+<td><p>2</p></td>
+<td><p>5.31</p></td>
+<td><p>31 1  33 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>412</p></td>
+<td><p>MAT_GEL_PHOTO_EMULSION</p></td>
+<td><p>5</p></td>
+<td><p>1.2914</p></td>
+<td><p>1 0.08118  6 0.41606  7 0.11124  8 0.38064  16 0.01088</p></td>
+</tr>
+<tr class="row-even"><td><p>413</p></td>
+<td><p>MAT_PYREX_GLASS</p></td>
+<td><p>6</p></td>
+<td><p>2.23</p></td>
+<td><p>5 0.0400639  8 0.539561  11 0.0281909  13 0.011644  14 0.377219  19 0.00332099</p></td>
+</tr>
+<tr class="row-odd"><td><p>414</p></td>
+<td><p>MAT_GLASS_LEAD</p></td>
+<td><p>5</p></td>
+<td><p>6.22</p></td>
+<td><p>8 0.156453  14 0.080866  22 0.008092  33 0.002651  82 0.751938</p></td>
+</tr>
+<tr class="row-even"><td><p>415</p></td>
+<td><p>MAT_GLASS_PLATE</p></td>
+<td><p>4</p></td>
+<td><p>2.4</p></td>
+<td><p>8 0.4598  11 0.0964411  14 0.336553  20 0.107205</p></td>
+</tr>
+<tr class="row-odd"><td><p>416</p></td>
+<td><p>MAT_GLUTAMINE</p></td>
+<td><p>4</p></td>
+<td><p>1.46</p></td>
+<td><p>6 5  1 10  7 2  8 3</p></td>
+</tr>
+<tr class="row-even"><td><p>417</p></td>
+<td><p>MAT_GLYCEROL</p></td>
+<td><p>3</p></td>
+<td><p>1.2613</p></td>
+<td><p>6 3  1 8  8 3</p></td>
+</tr>
+<tr class="row-odd"><td><p>418</p></td>
+<td><p>MAT_GUANINE</p></td>
+<td><p>4</p></td>
+<td><p>2.2</p></td>
+<td><p>6 5  1 5  7 5  8 1</p></td>
+</tr>
+<tr class="row-even"><td><p>419</p></td>
+<td><p>MAT_GYPSUM</p></td>
+<td><p>4</p></td>
+<td><p>2.32</p></td>
+<td><p>20 1  16 1  8 6  1 4</p></td>
+</tr>
+<tr class="row-odd"><td><p>420</p></td>
+<td><p>MAT_N-HEPTANE</p></td>
+<td><p>2</p></td>
+<td><p>0.68376</p></td>
+<td><p>6 7  1 16</p></td>
+</tr>
+<tr class="row-even"><td><p>421</p></td>
+<td><p>MAT_N-HEXANE</p></td>
+<td><p>2</p></td>
+<td><p>0.6603</p></td>
+<td><p>6 6  1 14</p></td>
+</tr>
+<tr class="row-odd"><td><p>422</p></td>
+<td><p>MAT_KAPTON</p></td>
+<td><p>4</p></td>
+<td><p>1.42</p></td>
+<td><p>6 22  1 10  7 2  8 5</p></td>
+</tr>
+<tr class="row-even"><td><p>423</p></td>
+<td><p>MAT_LANTHANUM_OXYBROMIDE</p></td>
+<td><p>3</p></td>
+<td><p>6.28</p></td>
+<td><p>57 1  35 1  8 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>424</p></td>
+<td><p>MAT_LANTHANUM_OXYSULFIDE</p></td>
+<td><p>3</p></td>
+<td><p>5.86</p></td>
+<td><p>57 2  8 2  16 1</p></td>
+</tr>
+<tr class="row-even"><td><p>425</p></td>
+<td><p>MAT_LEAD_OXIDE</p></td>
+<td><p>2</p></td>
+<td><p>9.53</p></td>
+<td><p>8 0.071682  82 0.928318</p></td>
+</tr>
+<tr class="row-odd"><td><p>426</p></td>
+<td><p>MAT_LITHIUM_AMIDE</p></td>
+<td><p>3</p></td>
+<td><p>1.178</p></td>
+<td><p>3 1  7 1  1 2</p></td>
+</tr>
+<tr class="row-even"><td><p>427</p></td>
+<td><p>MAT_LITHIUM_CARBONATE</p></td>
+<td><p>3</p></td>
+<td><p>2.11</p></td>
+<td><p>3 2  6 1  8 3</p></td>
+</tr>
+<tr class="row-odd"><td><p>428</p></td>
+<td><p>MAT_LITHIUM_FLUORIDE</p></td>
+<td><p>2</p></td>
+<td><p>2.635</p></td>
+<td><p>3 1  9 1</p></td>
+</tr>
+<tr class="row-even"><td><p>429</p></td>
+<td><p>MAT_LITHIUM_HYDRIDE</p></td>
+<td><p>2</p></td>
+<td><p>0.82</p></td>
+<td><p>3 1  1 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>430</p></td>
+<td><p>MAT_LITHIUM_IODIDE</p></td>
+<td><p>2</p></td>
+<td><p>3.494</p></td>
+<td><p>3 1  53 1</p></td>
+</tr>
+<tr class="row-even"><td><p>431</p></td>
+<td><p>MAT_LITHIUM_OXIDE</p></td>
+<td><p>2</p></td>
+<td><p>2.013</p></td>
+<td><p>3 2  8 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>432</p></td>
+<td><p>MAT_LITHIUM_TETRABORATE</p></td>
+<td><p>3</p></td>
+<td><p>2.44</p></td>
+<td><p>3 2  5 4  8 7</p></td>
+</tr>
+<tr class="row-even"><td><p>433</p></td>
+<td><p>MAT_LUNG_ICRP</p></td>
+<td><p>9</p></td>
+<td><p>1.04</p></td>
+<td><p>1 0.105  6 0.083  7 0.023  8 0.779  11 0.002  15 0.001  16 0.002  17 0.003  19 0.002</p></td>
+</tr>
+<tr class="row-odd"><td><p>434</p></td>
+<td><p>MAT_M3_WAX</p></td>
+<td><p>5</p></td>
+<td><p>1.05</p></td>
+<td><p>1 0.114318  6 0.655824  8 0.0921831  12 0.134792  20 0.002883</p></td>
+</tr>
+<tr class="row-even"><td><p>435</p></td>
+<td><p>MAT_MAGNESIUM_CARBONATE</p></td>
+<td><p>3</p></td>
+<td><p>2.958</p></td>
+<td><p>12 1  6 1  8 3</p></td>
+</tr>
+<tr class="row-odd"><td><p>436</p></td>
+<td><p>MAT_MAGNESIUM_FLUORIDE</p></td>
+<td><p>2</p></td>
+<td><p>3.0</p></td>
+<td><p>12 1  9 2</p></td>
+</tr>
+<tr class="row-even"><td><p>437</p></td>
+<td><p>MAT_MAGNESIUM_OXIDE</p></td>
+<td><p>2</p></td>
+<td><p>3.58</p></td>
+<td><p>12 1  8 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>438</p></td>
+<td><p>MAT_MAGNESIUM_TETRABORATE</p></td>
+<td><p>3</p></td>
+<td><p>2.53</p></td>
+<td><p>12 1  5 4  8 7</p></td>
+</tr>
+<tr class="row-even"><td><p>439</p></td>
+<td><p>MAT_MERCURIC_IODIDE</p></td>
+<td><p>2</p></td>
+<td><p>6.36</p></td>
+<td><p>80 1  53 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>440</p></td>
+<td><p>MAT_METHANE</p></td>
+<td><p>2</p></td>
+<td><p>0.000667</p></td>
+<td><p>6 1  1 4</p></td>
+</tr>
+<tr class="row-even"><td><p>441</p></td>
+<td><p>MAT_METHANOL</p></td>
+<td><p>3</p></td>
+<td><p>0.7914</p></td>
+<td><p>6 1  1 4  8 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>442</p></td>
+<td><p>MAT_MIX_D_WAX</p></td>
+<td><p>5</p></td>
+<td><p>0.99</p></td>
+<td><p>1 0.13404  6 0.77796  8 0.03502  12 0.038594  22 0.014386</p></td>
+</tr>
+<tr class="row-even"><td><p>443</p></td>
+<td><p>MAT_MS20_TISSUE</p></td>
+<td><p>6</p></td>
+<td><p>1.0</p></td>
+<td><p>1 0.081192  6 0.583442  7 0.017798  8 0.186381  12 0.130287  17 0.0009</p></td>
+</tr>
+<tr class="row-odd"><td><p>444</p></td>
+<td><p>MAT_MUSCLE_SKELETAL_ICRP</p></td>
+<td><p>9</p></td>
+<td><p>1.05</p></td>
+<td><p>1 0.102  6 0.143  7 0.034  8 0.71  11 0.001  15 0.002  16 0.003  17 0.001  19 0.004</p></td>
+</tr>
+<tr class="row-even"><td><p>445</p></td>
+<td><p>MAT_MUSCLE_STRIATED_ICRU</p></td>
+<td><p>8</p></td>
+<td><p>1.04</p></td>
+<td><p>1 0.102102  6 0.123123  7 0.035035  8 0.72973  11 0.001001  15 0.002002  16 0.004004  19 0.003003</p></td>
+</tr>
+<tr class="row-odd"><td><p>446</p></td>
+<td><p>MAT_MUSCLE_WITH_SUCROSE</p></td>
+<td><p>4</p></td>
+<td><p>1.11</p></td>
+<td><p>1 0.0982341  6 0.156214  7 0.035451  8 0.710101</p></td>
+</tr>
+<tr class="row-even"><td><p>447</p></td>
+<td><p>MAT_MUSCLE_WITHOUT_SUCROSE</p></td>
+<td><p>4</p></td>
+<td><p>1.07</p></td>
+<td><p>1 0.101969  6 0.120058  7 0.035451  8 0.742522</p></td>
+</tr>
+<tr class="row-odd"><td><p>448</p></td>
+<td><p>MAT_NAPHTHALENE</p></td>
+<td><p>2</p></td>
+<td><p>1.145</p></td>
+<td><p>6 10  1 8</p></td>
+</tr>
+<tr class="row-even"><td><p>449</p></td>
+<td><p>MAT_NITROBENZENE</p></td>
+<td><p>4</p></td>
+<td><p>1.19867</p></td>
+<td><p>6 6  1 5  7 1  8 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>450</p></td>
+<td><p>MAT_NITROUS_OXIDE</p></td>
+<td><p>2</p></td>
+<td><p>0.001831</p></td>
+<td><p>7 2  8 1</p></td>
+</tr>
+<tr class="row-even"><td><p>451</p></td>
+<td><p>MAT_NYLON-8062</p></td>
+<td><p>4</p></td>
+<td><p>1.08</p></td>
+<td><p>1 0.103509  6 0.648416  7 0.0995361  8 0.148539</p></td>
+</tr>
+<tr class="row-odd"><td><p>452</p></td>
+<td><p>MAT_NYLON-6-6</p></td>
+<td><p>4</p></td>
+<td><p>1.14</p></td>
+<td><p>6 6  1 11  7 1  8 1</p></td>
+</tr>
+<tr class="row-even"><td><p>453</p></td>
+<td><p>MAT_NYLON-6-10</p></td>
+<td><p>4</p></td>
+<td><p>1.14</p></td>
+<td><p>1 0.107062  6 0.680449  7 0.099189  8 0.1133</p></td>
+</tr>
+<tr class="row-odd"><td><p>454</p></td>
+<td><p>MAT_NYLON-11_RILSAN</p></td>
+<td><p>4</p></td>
+<td><p>1.425</p></td>
+<td><p>1 0.115476  6 0.720818  7 0.0764169  8 0.0872889</p></td>
+</tr>
+<tr class="row-even"><td><p>455</p></td>
+<td><p>MAT_OCTANE</p></td>
+<td><p>2</p></td>
+<td><p>0.7026</p></td>
+<td><p>6 8  1 18</p></td>
+</tr>
+<tr class="row-odd"><td><p>456</p></td>
+<td><p>MAT_N-PENTANE</p></td>
+<td><p>2</p></td>
+<td><p>0.6262</p></td>
+<td><p>6 5  1 12</p></td>
+</tr>
+<tr class="row-even"><td><p>457</p></td>
+<td><p>MAT_PHOTO_EMULSION</p></td>
+<td><p>8</p></td>
+<td><p>3.815</p></td>
+<td><p>1 0.0141  6 0.072261  7 0.01932  8 0.066101  16 0.00189  35 0.349103  47 0.474105  53 0.00312</p></td>
+</tr>
+<tr class="row-odd"><td><p>458</p></td>
+<td><p>MAT_PLASTIC_SC_VINYLTOLUENE</p></td>
+<td><p>2</p></td>
+<td><p>1.032</p></td>
+<td><p>6 9  1 10</p></td>
+</tr>
+<tr class="row-even"><td><p>459</p></td>
+<td><p>MAT_PLUTONIUM_DIOXIDE</p></td>
+<td><p>2</p></td>
+<td><p>11.0</p></td>
+<td><p>94 1  8 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>460</p></td>
+<td><p>MAT_POLYACRYLONITRILE</p></td>
+<td><p>3</p></td>
+<td><p>1.17</p></td>
+<td><p>6 3  1 3  7 1</p></td>
+</tr>
+<tr class="row-even"><td><p>461</p></td>
+<td><p>MAT_POLYCARBONATE</p></td>
+<td><p>3</p></td>
+<td><p>1.2</p></td>
+<td><p>6 16  1 14  8 3</p></td>
+</tr>
+<tr class="row-odd"><td><p>462</p></td>
+<td><p>MAT_POLYCHLOROSTYRENE</p></td>
+<td><p>3</p></td>
+<td><p>1.3</p></td>
+<td><p>6 8  1 7  17 1</p></td>
+</tr>
+<tr class="row-even"><td><p>463</p></td>
+<td><p>MAT_PLEXIGLASS</p></td>
+<td><p>3</p></td>
+<td><p>1.19</p></td>
+<td><p>6 5  1 8  8 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>464</p></td>
+<td><p>MAT_POLYOXYMETHYLENE</p></td>
+<td><p>3</p></td>
+<td><p>1.425</p></td>
+<td><p>6 1  1 2  8 1</p></td>
+</tr>
+<tr class="row-even"><td><p>465</p></td>
+<td><p>MAT_POLYPROPYLENE</p></td>
+<td><p>2</p></td>
+<td><p>0.9</p></td>
+<td><p>6 2  1 4</p></td>
+</tr>
+<tr class="row-odd"><td><p>466</p></td>
+<td><p>MAT_POLYSTYRENE</p></td>
+<td><p>2</p></td>
+<td><p>1.06</p></td>
+<td><p>6 8  1 8</p></td>
+</tr>
+<tr class="row-even"><td><p>467</p></td>
+<td><p>MAT_TEFLON</p></td>
+<td><p>2</p></td>
+<td><p>2.2</p></td>
+<td><p>6 2  9 4</p></td>
+</tr>
+<tr class="row-odd"><td><p>468</p></td>
+<td><p>MAT_POLYTRIFLUOROCHLOROETHYLENE</p></td>
+<td><p>3</p></td>
+<td><p>2.1</p></td>
+<td><p>6 2  9 3  17 1</p></td>
+</tr>
+<tr class="row-even"><td><p>469</p></td>
+<td><p>MAT_POLYVINYL_ACETATE</p></td>
+<td><p>3</p></td>
+<td><p>1.19</p></td>
+<td><p>6 4  1 6  8 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>470</p></td>
+<td><p>MAT_POLYVINYL_ALCOHOL</p></td>
+<td><p>3</p></td>
+<td><p>1.3</p></td>
+<td><p>6 2  1 4  8 1</p></td>
+</tr>
+<tr class="row-even"><td><p>471</p></td>
+<td><p>MAT_POLYVINYL_BUTYRAL</p></td>
+<td><p>3</p></td>
+<td><p>1.12</p></td>
+<td><p>6 8  1 14  8 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>472</p></td>
+<td><p>MAT_POLYVINYL_CHLORIDE</p></td>
+<td><p>3</p></td>
+<td><p>1.3</p></td>
+<td><p>6 2  1 3  17 1</p></td>
+</tr>
+<tr class="row-even"><td><p>473</p></td>
+<td><p>MAT_POLYVINYLIDENE_CHLORIDE</p></td>
+<td><p>3</p></td>
+<td><p>1.7</p></td>
+<td><p>6 2  1 2  17 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>474</p></td>
+<td><p>MAT_POLYVINYLIDENE_FLUORIDE</p></td>
+<td><p>3</p></td>
+<td><p>1.76</p></td>
+<td><p>6 2  1 2  9 2</p></td>
+</tr>
+<tr class="row-even"><td><p>475</p></td>
+<td><p>MAT_POLYVINYL_PYRROLIDONE</p></td>
+<td><p>4</p></td>
+<td><p>1.25</p></td>
+<td><p>6 6  1 9  7 1  8 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>476</p></td>
+<td><p>MAT_POTASSIUM_IODIDE</p></td>
+<td><p>2</p></td>
+<td><p>3.13</p></td>
+<td><p>19 1  53 1</p></td>
+</tr>
+<tr class="row-even"><td><p>477</p></td>
+<td><p>MAT_POTASSIUM_OXIDE</p></td>
+<td><p>2</p></td>
+<td><p>2.32</p></td>
+<td><p>19 2  8 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>478</p></td>
+<td><p>MAT_PROPANE</p></td>
+<td><p>2</p></td>
+<td><p>0.001879</p></td>
+<td><p>6 3  1 8</p></td>
+</tr>
+<tr class="row-even"><td><p>479</p></td>
+<td><p>MAT_LPROPANE</p></td>
+<td><p>2</p></td>
+<td><p>0.43</p></td>
+<td><p>6 3  1 8</p></td>
+</tr>
+<tr class="row-odd"><td><p>480</p></td>
+<td><p>MAT_N-PROPYL_ALCOHOL</p></td>
+<td><p>3</p></td>
+<td><p>0.8035</p></td>
+<td><p>6 3  1 8  8 1</p></td>
+</tr>
+<tr class="row-even"><td><p>481</p></td>
+<td><p>MAT_PYRIDINE</p></td>
+<td><p>3</p></td>
+<td><p>0.9819</p></td>
+<td><p>6 5  1 5  7 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>482</p></td>
+<td><p>MAT_RUBBER_BUTYL</p></td>
+<td><p>2</p></td>
+<td><p>0.92</p></td>
+<td><p>1 0.143711  6 0.856289</p></td>
+</tr>
+<tr class="row-even"><td><p>483</p></td>
+<td><p>MAT_RUBBER_NATURAL</p></td>
+<td><p>2</p></td>
+<td><p>0.92</p></td>
+<td><p>1 0.118371  6 0.881629</p></td>
+</tr>
+<tr class="row-odd"><td><p>484</p></td>
+<td><p>MAT_RUBBER_NEOPRENE</p></td>
+<td><p>3</p></td>
+<td><p>1.23</p></td>
+<td><p>1 0.05692  6 0.542646  17 0.400434</p></td>
+</tr>
+<tr class="row-even"><td><p>485</p></td>
+<td><p>MAT_SILICON_DIOXIDE</p></td>
+<td><p>2</p></td>
+<td><p>2.32</p></td>
+<td><p>14 1  8 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>486</p></td>
+<td><p>MAT_SILVER_BROMIDE</p></td>
+<td><p>2</p></td>
+<td><p>6.473</p></td>
+<td><p>47 1  35 1</p></td>
+</tr>
+<tr class="row-even"><td><p>487</p></td>
+<td><p>MAT_SILVER_CHLORIDE</p></td>
+<td><p>2</p></td>
+<td><p>5.56</p></td>
+<td><p>47 1  17 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>488</p></td>
+<td><p>MAT_SILVER_HALIDES</p></td>
+<td><p>3</p></td>
+<td><p>6.47</p></td>
+<td><p>35 0.422895  47 0.573748  53 0.003357</p></td>
+</tr>
+<tr class="row-even"><td><p>489</p></td>
+<td><p>MAT_SILVER_IODIDE</p></td>
+<td><p>2</p></td>
+<td><p>6.01</p></td>
+<td><p>47 1  53 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>490</p></td>
+<td><p>MAT_SKIN_ICRP</p></td>
+<td><p>9</p></td>
+<td><p>1.09</p></td>
+<td><p>1 0.1  6 0.204  7 0.042  8 0.645  11 0.002  15 0.001  16 0.002  17 0.003  19 0.001</p></td>
+</tr>
+<tr class="row-even"><td><p>491</p></td>
+<td><p>MAT_SODIUM_CARBONATE</p></td>
+<td><p>3</p></td>
+<td><p>2.532</p></td>
+<td><p>11 2  6 1  8 3</p></td>
+</tr>
+<tr class="row-odd"><td><p>492</p></td>
+<td><p>MAT_SODIUM_IODIDE</p></td>
+<td><p>2</p></td>
+<td><p>3.667</p></td>
+<td><p>11 1  53 1</p></td>
+</tr>
+<tr class="row-even"><td><p>493</p></td>
+<td><p>MAT_SODIUM_MONOXIDE</p></td>
+<td><p>2</p></td>
+<td><p>2.27</p></td>
+<td><p>11 2  8 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>494</p></td>
+<td><p>MAT_SODIUM_NITRATE</p></td>
+<td><p>3</p></td>
+<td><p>2.261</p></td>
+<td><p>11 1  7 1  8 3</p></td>
+</tr>
+<tr class="row-even"><td><p>495</p></td>
+<td><p>MAT_STILBENE</p></td>
+<td><p>2</p></td>
+<td><p>0.9707</p></td>
+<td><p>6 14  1 12</p></td>
+</tr>
+<tr class="row-odd"><td><p>496</p></td>
+<td><p>MAT_SUCROSE</p></td>
+<td><p>3</p></td>
+<td><p>1.5805</p></td>
+<td><p>6 12  1 22  8 11</p></td>
+</tr>
+<tr class="row-even"><td><p>497</p></td>
+<td><p>MAT_TERPHENYL</p></td>
+<td><p>2</p></td>
+<td><p>1.24</p></td>
+<td><p>6 18  1 14</p></td>
+</tr>
+<tr class="row-odd"><td><p>498</p></td>
+<td><p>MAT_TESTIS_ICRP</p></td>
+<td><p>9</p></td>
+<td><p>1.04</p></td>
+<td><p>1 0.106  6 0.099  7 0.02  8 0.766  11 0.002  15 0.001  16 0.002  17 0.002  19 0.002</p></td>
+</tr>
+<tr class="row-even"><td><p>499</p></td>
+<td><p>MAT_TETRACHLOROETHYLENE</p></td>
+<td><p>2</p></td>
+<td><p>1.625</p></td>
+<td><p>6 2  17 4</p></td>
+</tr>
+<tr class="row-odd"><td><p>500</p></td>
+<td><p>MAT_THALLIUM_CHLORIDE</p></td>
+<td><p>2</p></td>
+<td><p>7.004</p></td>
+<td><p>81 1  17 1</p></td>
+</tr>
+<tr class="row-even"><td><p>501</p></td>
+<td><p>MAT_TISSUE_SOFT_ICRP</p></td>
+<td><p>9</p></td>
+<td><p>1.03</p></td>
+<td><p>1 0.105  6 0.256  7 0.027  8 0.602  11 0.001  15 0.002  16 0.003  17 0.002  19 0.002</p></td>
+</tr>
+<tr class="row-odd"><td><p>502</p></td>
+<td><p>MAT_TISSUE_SOFT_ICRU-4</p></td>
+<td><p>4</p></td>
+<td><p>1.0</p></td>
+<td><p>1 0.101  6 0.111  7 0.026  8 0.762</p></td>
+</tr>
+<tr class="row-even"><td><p>503</p></td>
+<td><p>MAT_TISSUE-METHANE</p></td>
+<td><p>4</p></td>
+<td><p>0.001064</p></td>
+<td><p>1 0.101869  6 0.456179  7 0.035172  8 0.40678</p></td>
+</tr>
+<tr class="row-odd"><td><p>504</p></td>
+<td><p>MAT_TISSUE-PROPANE</p></td>
+<td><p>4</p></td>
+<td><p>0.001826</p></td>
+<td><p>1 0.102672  6 0.56894  7 0.035022  8 0.293366</p></td>
+</tr>
+<tr class="row-even"><td><p>505</p></td>
+<td><p>MAT_TITANIUM_DIOXIDE</p></td>
+<td><p>2</p></td>
+<td><p>4.26</p></td>
+<td><p>22 1  8 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>506</p></td>
+<td><p>MAT_TOLUENE</p></td>
+<td><p>2</p></td>
+<td><p>0.8669</p></td>
+<td><p>6 7  1 8</p></td>
+</tr>
+<tr class="row-even"><td><p>507</p></td>
+<td><p>MAT_TRICHLOROETHYLENE</p></td>
+<td><p>3</p></td>
+<td><p>1.46</p></td>
+<td><p>6 2  1 1  17 3</p></td>
+</tr>
+<tr class="row-odd"><td><p>508</p></td>
+<td><p>MAT_TRIETHYL_PHOSPHATE</p></td>
+<td><p>4</p></td>
+<td><p>1.07</p></td>
+<td><p>6 6  1 15  8 4  15 1</p></td>
+</tr>
+<tr class="row-even"><td><p>509</p></td>
+<td><p>MAT_TUNGSTEN_HEXAFLUORIDE</p></td>
+<td><p>2</p></td>
+<td><p>2.4</p></td>
+<td><p>74 1  9 6</p></td>
+</tr>
+<tr class="row-odd"><td><p>510</p></td>
+<td><p>MAT_URANIUM_DICARBIDE</p></td>
+<td><p>2</p></td>
+<td><p>11.0</p></td>
+<td><p>92 1  6 2</p></td>
+</tr>
+<tr class="row-even"><td><p>511</p></td>
+<td><p>MAT_URANIUM_MONOCARBIDE</p></td>
+<td><p>2</p></td>
+<td><p>13.0</p></td>
+<td><p>92 1  6 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>512</p></td>
+<td><p>MAT_URANIUM_OXIDE</p></td>
+<td><p>2</p></td>
+<td><p>10.0</p></td>
+<td><p>92 1  8 2</p></td>
+</tr>
+<tr class="row-even"><td><p>513</p></td>
+<td><p>MAT_UREA</p></td>
+<td><p>4</p></td>
+<td><p>1.323</p></td>
+<td><p>6 1  1 4  7 2  8 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>514</p></td>
+<td><p>MAT_VALINE</p></td>
+<td><p>4</p></td>
+<td><p>1.23</p></td>
+<td><p>6 5  1 11  7 1  8 2</p></td>
+</tr>
+<tr class="row-even"><td><p>515</p></td>
+<td><p>MAT_VITON</p></td>
+<td><p>3</p></td>
+<td><p>1.8</p></td>
+<td><p>1 0.009417  6 0.280555  9 0.710028</p></td>
+</tr>
+<tr class="row-odd"><td><p>516</p></td>
+<td><p>MAT_WATER</p></td>
+<td><p>2</p></td>
+<td><p>1.0</p></td>
+<td><p>1 2  8 1</p></td>
+</tr>
+<tr class="row-even"><td><p>517</p></td>
+<td><p>MAT_WATER_VAPOR</p></td>
+<td><p>2</p></td>
+<td><p>0.000756</p></td>
+<td><p>1 2  8 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>518</p></td>
+<td><p>MAT_GRAPHITE</p></td>
+<td><p>1</p></td>
+<td><p>2.21</p></td>
+<td><p>1 1</p></td>
+</tr>
+<tr class="row-even"><td><p>519</p></td>
+<td><p>MAT_H2</p></td>
+<td><p>1</p></td>
+<td><p>0.0708</p></td>
+<td><p>1 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>520</p></td>
+<td><p>MAT_N2</p></td>
+<td><p>1</p></td>
+<td><p>0.807</p></td>
+<td><p>1 1</p></td>
+</tr>
+<tr class="row-even"><td><p>521</p></td>
+<td><p>MAT_O2</p></td>
+<td><p>1</p></td>
+<td><p>1.141</p></td>
+<td><p>1 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>522</p></td>
+<td><p>MAT_Ar</p></td>
+<td><p>1</p></td>
+<td><p>1.396</p></td>
+<td><p>1 1</p></td>
+</tr>
+<tr class="row-even"><td><p>523</p></td>
+<td><p>MAT_Br</p></td>
+<td><p>1</p></td>
+<td><p>3.1028</p></td>
+<td><p>1 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>524</p></td>
+<td><p>MAT_Kr</p></td>
+<td><p>1</p></td>
+<td><p>2.418</p></td>
+<td><p>1 1</p></td>
+</tr>
+<tr class="row-even"><td><p>525</p></td>
+<td><p>MAT_Xe</p></td>
+<td><p>1</p></td>
+<td><p>2.953</p></td>
+<td><p>1 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>526</p></td>
+<td><p>MAT_PBWO4</p></td>
+<td><p>3</p></td>
+<td><p>8.28</p></td>
+<td><p>8 4  82 1  74 1</p></td>
+</tr>
+<tr class="row-even"><td><p>527</p></td>
+<td><p>MAT_GRAPHITE_POROUS</p></td>
+<td><p>1</p></td>
+<td><p>1.7</p></td>
+<td><p>1 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>528</p></td>
+<td><p>MAT_STAINLESS-STEEL</p></td>
+<td><p>3</p></td>
+<td><p>8.0</p></td>
+<td><p>26 74  24 18  28 8</p></td>
+</tr>
+<tr class="row-even"><td><p>529</p></td>
+<td><p>MAT_CR39</p></td>
+<td><p>3</p></td>
+<td><p>1.32</p></td>
+<td><p>1 18  6 12  8 7</p></td>
+</tr>
+<tr class="row-odd"><td><p>530</p></td>
+<td><p>MAT_OCTADECANOL</p></td>
+<td><p>3</p></td>
+<td><p>0.812</p></td>
+<td><p>1 38  6 18  8 1</p></td>
+</tr>
+<tr class="row-even"><td><p>531</p></td>
+<td><p>MAT_KEVLAR</p></td>
+<td><p>4</p></td>
+<td><p>1.44</p></td>
+<td><p>6 14  1 10  8 2  7 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>532</p></td>
+<td><p>MAT_DACRON</p></td>
+<td><p>3</p></td>
+<td><p>1.4</p></td>
+<td><p>6 10  1 8  8 4</p></td>
+</tr>
+<tr class="row-even"><td><p>533</p></td>
+<td><p>MAT_NEOPRENE</p></td>
+<td><p>3</p></td>
+<td><p>1.23</p></td>
+<td><p>6 4  1 5  17 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>534</p></td>
+<td><p>MAT_CYTOSINE</p></td>
+<td><p>4</p></td>
+<td><p>1.55</p></td>
+<td><p>1 5  6 4  7 3  8 1</p></td>
+</tr>
+<tr class="row-even"><td><p>535</p></td>
+<td><p>MAT_THYMINE</p></td>
+<td><p>4</p></td>
+<td><p>1.23</p></td>
+<td><p>1 6  6 5  7 2  8 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>536</p></td>
+<td><p>MAT_URACIL</p></td>
+<td><p>4</p></td>
+<td><p>1.32</p></td>
+<td><p>1 4  6 4  7 2  8 2</p></td>
+</tr>
+<tr class="row-even"><td><p>537</p></td>
+<td><p>MAT_DNA_ADENINE</p></td>
+<td><p>3</p></td>
+<td><p>1.0</p></td>
+<td><p>1 4  6 5  7 5</p></td>
+</tr>
+<tr class="row-odd"><td><p>538</p></td>
+<td><p>MAT_DNA_GUANINE</p></td>
+<td><p>4</p></td>
+<td><p>1.0</p></td>
+<td><p>1 4  6 5  7 5  8 1</p></td>
+</tr>
+<tr class="row-even"><td><p>539</p></td>
+<td><p>MAT_DNA_CYTOSINE</p></td>
+<td><p>4</p></td>
+<td><p>1.0</p></td>
+<td><p>1 4  6 4  7 3  8 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>540</p></td>
+<td><p>MAT_DNA_THYMINE</p></td>
+<td><p>4</p></td>
+<td><p>1.0</p></td>
+<td><p>1 5  6 5  7 2  8 2</p></td>
+</tr>
+<tr class="row-even"><td><p>541</p></td>
+<td><p>MAT_DNA_URACIL</p></td>
+<td><p>4</p></td>
+<td><p>1.0</p></td>
+<td><p>1 3  6 4  7 2  8 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>542</p></td>
+<td><p>MAT_DNA_ADENOSINE</p></td>
+<td><p>4</p></td>
+<td><p>1.0</p></td>
+<td><p>1 10  6 10  7 5  8 4</p></td>
+</tr>
+<tr class="row-even"><td><p>543</p></td>
+<td><p>MAT_DNA_GUANOSINE</p></td>
+<td><p>4</p></td>
+<td><p>1.0</p></td>
+<td><p>1 10  6 10  7 5  8 5</p></td>
+</tr>
+<tr class="row-odd"><td><p>544</p></td>
+<td><p>MAT_DNA_CYTIDINE</p></td>
+<td><p>4</p></td>
+<td><p>1.0</p></td>
+<td><p>1 10  6 9  7 3  8 5</p></td>
+</tr>
+<tr class="row-even"><td><p>545</p></td>
+<td><p>MAT_DNA_URIDINE</p></td>
+<td><p>4</p></td>
+<td><p>1.0</p></td>
+<td><p>1 9  6 9  7 2  8 6</p></td>
+</tr>
+<tr class="row-odd"><td><p>546</p></td>
+<td><p>MAT_DNA_METHYLURIDINE</p></td>
+<td><p>4</p></td>
+<td><p>1.0</p></td>
+<td><p>1 11  6 10  7 2  8 6</p></td>
+</tr>
+<tr class="row-even"><td><p>547</p></td>
+<td><p>MAT_DNA_MONOPHOSPHATE</p></td>
+<td><p>2</p></td>
+<td><p>1.0</p></td>
+<td><p>15 1  8 3</p></td>
+</tr>
+<tr class="row-odd"><td><p>548</p></td>
+<td><p>MAT_DNA_A</p></td>
+<td><p>5</p></td>
+<td><p>1.0</p></td>
+<td><p>1 10  6 10  7 5  8 7  15 1</p></td>
+</tr>
+<tr class="row-even"><td><p>549</p></td>
+<td><p>MAT_DNA_G</p></td>
+<td><p>5</p></td>
+<td><p>1.0</p></td>
+<td><p>1 10  6 10  7 5  8 8  15 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>550</p></td>
+<td><p>MAT_DNA_C</p></td>
+<td><p>5</p></td>
+<td><p>1.0</p></td>
+<td><p>1 10  6 9  7 3  8 8  15 1</p></td>
+</tr>
+<tr class="row-even"><td><p>551</p></td>
+<td><p>MAT_DNA_U</p></td>
+<td><p>5</p></td>
+<td><p>1.0</p></td>
+<td><p>1 9  6 9  7 2  8 9  15 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>552</p></td>
+<td><p>MAT_DNA_MU</p></td>
+<td><p>5</p></td>
+<td><p>1.0</p></td>
+<td><p>1 11  6 10  7 2  8 9  15 1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+    <div class="clearer"></div>
+  </div>
+    <div class="footer">
+      &copy;2020, Ivan Gordeev.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/material.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
