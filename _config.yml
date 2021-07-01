@@ -52,6 +52,7 @@ staticman:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
+search                   : true
 search_provider          : "algolia"
 
 algolia:
