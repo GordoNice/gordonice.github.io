@@ -53,10 +53,10 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification :
+google_site_verification : "RdxkB9o0Esfa9owPUo_prxjWyTUmsk9D7vQCxm3aN3I"
 bing_site_verification   :
 alexa_site_verification  :
-yandex_site_verification :
+yandex_site_verification : "b2ceb3a33a3738f3"
 
 # Social Sharing
 twitter:
@@ -118,7 +118,6 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-
 
 # Reading Files
 include:
