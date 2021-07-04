@@ -1,6 +1,8 @@
 ---
 title: 'Movement of a charged particle in electromagnetic field'
 date: 2021-06-16
+header:
+  teaser: "https://ivangordeev.com/images/glowscript/partmovement.png"
 permalink: /posts/2021/06/part_movement/
 tags:
   - physics
@@ -9,8 +11,6 @@ tags:
   - vpython
   - lecture
 ---
-
-![](https://ivangordeev.com/images/glowscript/partmovement.png)
 
 This visualization was done as an illustrative material for lecture on the
 "Physics and Technology of Accelerators" at Dubna State University. Coded with
