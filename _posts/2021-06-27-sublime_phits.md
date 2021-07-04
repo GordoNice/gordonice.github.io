@@ -2,6 +2,7 @@
 title: 'Syntax highlighting and execution of PHITS input files for Sublime Text editor'
 date: 2021-06-27
 permalink: /posts/2021/06/sublime_phits/
+teaser: "https://raw.githubusercontent.com/GordoNice/phits_sublime_support/master/Screenshot.png"
 tags:
   - editor
   - Monte Carlo
