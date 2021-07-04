@@ -45,4 +45,4 @@ persistent reflections and attempts to solve the problem, a solution comes.
 If you have any additional questions, please feel free to contact me by email
 or on the social network. 
 
-<img src="https://ivangordeev.com/images/credo.png" width="100%" />
+<img src="https://ivangordeev.com/images/credo.svg" width="100%" />
