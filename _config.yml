@@ -12,7 +12,6 @@
 locale                   : "en-US"
 title                    : "Ivan Gordeev"
 title_separator          : "-"
-logo                     : "https://ivangordeev.com/images/logo_transparent.png"
 name                     : &name "Ivan Gordeev"
 description              : &description "Junior Researcher at Joint Institute for Nuclear Research"
 url                      : https://ivangordeev.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -66,7 +65,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 :  "https://ivangordeev.com/images/logo_transparent.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
