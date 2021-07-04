@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="112mm"
-   height="15mm"
-   viewBox="0 0 112 15"
+   width="150mm"
+   height="30mm"
+   viewBox="0 0 150 30"
    version="1.1"
    id="svg5"
    inkscape:version="1.1 (1:1.1+202105261517+ce6663b3b7)"
@@ -47,13 +47,13 @@
      id="layer1">
     <text
        xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-25.001919,-30.061879)"
+       transform="matrix(0.26458333,0,0,0.26458333,-3.4756025,-23.102655)"
        id="text1924"
        style="font-style:normal;font-weight:normal;font-size:32px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1926);fill:#000000;fill-opacity:1;stroke:none"><tspan
          x="104.33594"
          y="153.46094"
-         id="tspan5270"><tspan
+         id="tspan5281"><tspan
            style="font-family:Z003;-inkscape-font-specification:Z003"
-           id="tspan5268">Let's create in order to understand!</tspan></tspan></text>
+           id="tspan5279">Let's create in order to understand!</tspan></tspan></text>
   </g>
 </svg>
