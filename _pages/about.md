@@ -8,11 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-My name is Ivan Gordeev, at the moment I am a postgraduate student at the [Dubna State
+My name is Ivan Gordeev, at the moment I am a postgraduate student of [Dubna State
 University](https://int.uni-dubna.ru/) with major in physics and astronomy.
 I work as a junior researcher at [JINR](http://www.jinr.ru/main-en/)
 in the [Laboratory of Radiation Biology](http://lrb.jinr.ru/index.php/en/) in
-the research group of radiation fields of JINR base facilities.
+the research group of radiation fields of the JINR base facilities.
 
 Part of my work is mostly computing using Monte Carlo transport codes such as [FLUKA](https://fluka.cern/home)
 and [PHITS](https://phits.jaea.go.jp/), and analyzing the calculated results,
