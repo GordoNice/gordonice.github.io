@@ -40,4 +40,4 @@ Try this out on a GlowScript site or right here below!
 
 &nbsp;
 
-<img src="https://ivangordeev.com/images/credo.svg" width="100%" />
+<img src="https://ivangordeev.com/images/credo.png" width="100%" />

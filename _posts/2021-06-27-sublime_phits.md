@@ -25,4 +25,4 @@ right inside the text editor! All the files with instructions are available here
 
 Feel free to improve it and enjoy!
 
-<img src="https://ivangordeev.com/images/credo.svg" width="100%" />
+<img src="https://ivangordeev.com/images/credo.png" width="100%" />
