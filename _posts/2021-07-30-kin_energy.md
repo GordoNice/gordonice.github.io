@@ -18,5 +18,6 @@ tags:
 &nbsp;
 
 The video above illustrates the difference between relativistic and classic kinetic energy.
+The Taylor series approximates step by step the relativistic case.
 
 <img src="https://ivangordeev.com/images/credo.png" width="100%" />
