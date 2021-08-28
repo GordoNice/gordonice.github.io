@@ -20,7 +20,7 @@ the research group of radiation fields of the JINR base facilities.
 
 Part of my work in the laboratory is mainly related to calculations using Monte
 Carlo transport codes such as [FLUKA](https://fluka.cern/home)
-and [PHITS](https://phits.jaea.go.jp/), and analyzing the calculated results,
+and [PHITS](https://phits.jaea.go.jp/), and analysis of the results of calculations,
 for this purpose I use Python. I also have skills to work with
 [GEANT4](https://geant4.web.cern.ch/node/1), [ROOT](https://root.cern/) framework
 and some experience with C++ and Fortran languages, see my [CV](https://ivangordeev.com/cv/) for the full
