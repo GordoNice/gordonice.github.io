@@ -87,37 +87,37 @@ author:
   bio              : "Junior Researcher at JINR, LRB. Postgraduate student of Dubna State University"
   location         : "Dubna, Russia"
 #  employer         : "Joint Institute for Nuclear Research"
-  pubmed           : 
-  googlescholar    : 
+#  pubmed           :
+#  googlescholar    :
   email            : "gordeev@jinr.ru"
   researchgate     : "https://www.researchgate.net/profile/Ivan-Gordeev"
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
+#  uri              :
+#  bitbucket        :
+#  codepen          :
+#  dribbble         :
+#  flickr           :
   facebook         : "gordonice96"
-  vk               :
-  foursquare       :
+#  vk               :
+#  foursquare       :
   github           : "GordoNice"
-  google_plus      :
-  keybase          :
+#  google_plus      :
+#  keybase          :
   instagram        : "_ivan_gordeev"
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
-  lastfm           :
-  linkedin         :
+#  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+#  lastfm           :
+#  linkedin         :
   orcid            : "https://orcid.org/0000-0003-3120-3401"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            :
-  tumblr           :
+#  pinterest        :
+#  soundcloud       :
+#  stackoverflow    : # http://stackoverflow.com/users/123456/username
+#  steam            :
+#  tumblr           :
   twitter          : "Ivan34706278"
-  vine             :
-  weibo            :
-  xing             :
+#  vine             :
+#  weibo            :
+#  xing             :
   youtube          :
-  wikipedia        :
+#  wikipedia        :
 
 # Reading Files
 include:
