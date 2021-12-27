@@ -10,7 +10,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ivan Gordeev HEY"
+title                    : "Ivan Gordeev"
 title_separator          : "-"
 name                     : &name "Ivan Gordeev"
 description              : &description "Junior Researcher at Joint Institute for Nuclear Research"
