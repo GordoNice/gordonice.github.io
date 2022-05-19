@@ -29,8 +29,8 @@ list of software in use and skills.
 ## Additional
 
 On this website you can find comprehensive information about me:
-[list of publications](https://gordonice.github.io/publications/),
-[CV](https://gordonice.github.io/cv/), [posts with some projects](https://gordonice.github.io/posts/).
+[list of publications](https://ivangordeev.com/publications/),
+[CV](https://ivangordeev.com/cv/), [posts with some projects](https://ivangordeev.com/posts/).
 
 One of my favorite physicists is Richard Feynman and I really like one of his
 famous quotes: _What I Cannot Create, I Do Not Understand_. I take this expression
