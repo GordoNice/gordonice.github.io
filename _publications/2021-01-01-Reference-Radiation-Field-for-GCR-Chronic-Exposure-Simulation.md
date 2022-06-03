@@ -5,7 +5,7 @@ permalink: /publication/2021-01-01-Reference-Radiation-Field-for-GCR-Chronic-Exp
 date: 2021-01-01
 venue: 'Physics of Particles and Nuclei Letters'
 paperurl: 'https://doi.org/10.1134/S1547477121070128'
-authors: 'G. Timoshenko, I. Gordeev'
+authors: 'G. N. Timoshenko, <u>I. S. Gordeev</u>'
 abstract: 'A very urgent problem for space radiobiology is to model a chronic GCR exposure concerning simulations with animal models of human risks. However, it was impossible to realize similar irradiation in ground-based conditions until today because the use of heavy-ion accelerators for a long time for this purpose is not realistic. The booster of the Nuclotron--one of the heavy-ion accelerators of the NICA complex of Joint Institute for Nuclear Research--provides this unique possibility. The booster accelerates ions $^{197}$Au to 578 MeV/n with a charge state of 31+. Before injection of the booster beam to the main heavy-ion accelerator “Nuclotron”, the booster ions are fully stripped (to charge state 79+) by a thin copper foil. The efficiency of stripping is about 90%. The beam of remaining 10% of ions with no-target charge states will be directed to the trap. A small part of this beam can be used to generate the stable reference radiation field with parameters similar to the space radiation for chronic exposure of biological samples. This operation mode will continue 22 hours every day for eight months in the year at the NICA collider work with $^{197}$Au ions. The variant of such the field is discussed in the article.'
 ---
 
