@@ -3,8 +3,8 @@ title: "Kinetic energy: relativistic vs. classic (manim visualization)"
 date: 2021-07-30
 permalink: /posts/2021/07/kin_energy/
 header:
-  teaser: "https://ivangordeev.com/images/kin_energy/T_v.png"
-og_image: "https://ivangordeev.com/images/kin_energy/T_v.png"
+  teaser: "https://gordeev.page/images/kin_energy/T_v.png"
+og_image: "https://gordeev.page/images/kin_energy/T_v.png"
 tags:
   - physics
   - visualization
@@ -20,4 +20,4 @@ tags:
 The video above illustrates the difference between relativistic (green curve) and classic (blue curve) kinetic energy.
 The Taylor series approximates step by step the relativistic case.
 
-<img src="https://ivangordeev.com/images/credo.png" width="100%" />
+<img src="https://gordeev.page/images/credo.png" width="100%" />

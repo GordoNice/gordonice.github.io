@@ -2,7 +2,7 @@
 title: 'Movement of a charged particle in electromagnetic field'
 date: 2021-06-16
 header:
-  teaser: "https://ivangordeev.com/images/glowscript/partmovement.png"
+  teaser: "https://gordeev.page/images/glowscript/partmovement.png"
 permalink: /posts/2021/06/part_movement/
 tags:
   - physics
@@ -40,4 +40,4 @@ Try this out on a GlowScript site or right here below!
 
 &nbsp;
 
-<img src="https://ivangordeev.com/images/credo.png" width="100%" />
+<img src="https://gordeev.page/images/credo.png" width="100%" />

@@ -23,14 +23,14 @@ Carlo transport codes such as [FLUKA](https://fluka.cern/home)
 and [PHITS](https://phits.jaea.go.jp/), and analysis of the results of calculations,
 for this purpose I use Python. I also have skills to work with
 [GEANT4](https://geant4.web.cern.ch/node/1), [ROOT](https://root.cern/) framework
-and some experience with C++ and Fortran languages, see my [CV](https://ivangordeev.com/cv/) for the full
+and some experience with C++ and Fortran languages, see my [CV](https://gordeev.page/cv/) for the full
 list of software in use and skills.
 
 ## Additional
 
 On this website you can find comprehensive information about me:
-[list of publications](https://ivangordeev.com/publications/),
-[CV](https://ivangordeev.com/cv/), [posts with some projects](https://ivangordeev.com/posts/).
+[list of publications](https://gordeev.page/publications/),
+[CV](https://gordeev.page/cv/), [posts with some projects](https://gordeev.page/posts/).
 
 One of my favorite physicists is Richard Feynman and I really like one of his
 famous quotes: _What I Cannot Create, I Do Not Understand_. I take this expression
@@ -45,4 +45,4 @@ persistent reflections and attempts to solve the problem, a solution comes.
 If you have any additional questions, please feel free to contact me by email
 or on the social network. 
 
-<img src="https://ivangordeev.com/images/credo.png" width="100%" />
+<img src="https://gordeev.page/images/credo.png" width="100%" />
