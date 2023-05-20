@@ -14,10 +14,10 @@ title                    : "Ivan Gordeev"
 title_separator          : "-"
 name                     : &name "Ivan Gordeev"
 description              : &description "Junior Researcher at Joint Institute for Nuclear Research"
-url                      : https://ivangordeev.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://gordeev.page # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "gordonice.github.io"
-teaser                   : "https://ivangordeev.com/images/teaser.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   : "https://gordeev.page/images/teaser.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
@@ -26,7 +26,7 @@ talkmap_link             : false #change to true to add link to talkmap on talks
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : "ivangordeev-com"
+    shortname            : "gordeev-page"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -65,7 +65,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  "https://ivangordeev.com/images/teaser.png" # Open Graph/Twitter default site image
+og_image                 :  "https://gordeev.page/images/teaser.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -84,7 +84,7 @@ analytics:
 author:
   name             : "Ivan Gordeev"
   avatar           : "profile.jpg"
-  bio              : "Junior Researcher at JINR, LRB. Postgraduate student of Dubna State University"
+  bio              : "Researcher at JINR, LRB. Postgraduate student of Dubna State University"
   location         : "Dubna, Russia"
 #  employer         : "Joint Institute for Nuclear Research"
 #  pubmed           :
