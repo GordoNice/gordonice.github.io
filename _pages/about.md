@@ -12,9 +12,9 @@ redirect_from:
 
 My name is Ivan Gordeev, at the moment I am a postgraduate student of [Dubna State
 University](https://int.uni-dubna.ru/) with major in physics and astronomy.
-I work as a junior researcher at [Joint Institute for Nuclear Research (JINR)](http://www.jinr.ru/main-en/)
+I work as a researcher at the [Joint Institute for Nuclear Research (JINR)](http://www.jinr.ru/main-en/)
 in the [Laboratory of Radiation Biology (LRB)](http://lrb.jinr.ru/index.php/en/) in
-the research group of radiation fields of the JINR base facilities.
+the Radiation Research Department of radiation research of the JINR base facilities.
 
 ## Field of work
 
