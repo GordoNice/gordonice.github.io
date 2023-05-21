@@ -1,12 +1,14 @@
 ---
 permalink: /
-#title: "Welcome to my website!"
+title: "Welcome to my website!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+## About me
 
 I'm a researcher at the [JINR](http://www.jinr.ru/main-en/)
 [Laboratory of Radiation Biology (LRB)](http://lrb.jinr.ru/index.php/en/), I'm in
