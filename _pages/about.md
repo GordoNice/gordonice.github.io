@@ -8,8 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-## About me
-
 I'm a researcher at the [JINR](http://www.jinr.ru/main-en/)
 [Laboratory of Radiation Biology (LRB)](http://lrb.jinr.ru/index.php/en/), I'm in
 the Radiation Research Department of the base facilities. Also, I'm a postgraduate
