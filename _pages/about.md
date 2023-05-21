@@ -10,11 +10,14 @@ redirect_from:
 
 ## About me
 
-My name is Ivan Gordeev, at the moment I am a postgraduate student of [Dubna State
-University](https://int.uni-dubna.ru/) with major in physics and astronomy.
-I work as a researcher at the [Joint Institute for Nuclear Research (JINR)](http://www.jinr.ru/main-en/)
+I'm a researcher at the [Joint Institute for Nuclear Research (JINR)](http://www.jinr.ru/main-en/)
 in the [Laboratory of Radiation Biology (LRB)](http://lrb.jinr.ru/index.php/en/) in
-the Radiation Research Department of radiation research of the JINR base facilities.
+the Radiation Research Department of the base facilities. Also, I'm a postgraduate
+student of [Dubna State University](https://int.uni-dubna.ru/) with major in physics and astronomy.
+
+On this website you can find comprehensive information about me:
+[list of publications](https://gordeev.page/publications/),
+[CV](https://gordeev.page/cv/), [posts with some projects](https://gordeev.page/posts/).
 
 ## Field of work
 
@@ -23,14 +26,10 @@ Carlo transport codes such as [FLUKA](https://fluka.cern/home)
 and [PHITS](https://phits.jaea.go.jp/), and analysis of the results of calculations,
 for this purpose I use Python. I also have skills to work with
 [GEANT4](https://geant4.web.cern.ch/node/1), [ROOT](https://root.cern/) framework
-and some experience with C++ and Fortran languages, see my [CV](https://gordeev.page/cv/) for the full
-list of software in use and skills.
+and some experience with C++ and Fortran languages, look at my [CV](https://gordeev.page/cv/)
+for additional information.
 
-## Additional
-
-On this website you can find comprehensive information about me:
-[list of publications](https://gordeev.page/publications/),
-[CV](https://gordeev.page/cv/), [posts with some projects](https://gordeev.page/posts/).
+## P.S.
 
 One of my favorite physicists is Richard Feynman and I really like one of his
 famous quotes: _What I Cannot Create, I Do Not Understand_. I take this expression
