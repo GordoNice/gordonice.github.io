@@ -21,7 +21,7 @@ On this website you can find comprehensive information about me:
 
 ## Field of work
 
-Part of my work in the laboratory is mainly related to calculations using Monte
+My work in the lab is mainly related to calculations using Monte
 Carlo transport codes such as [FLUKA](https://fluka.cern/home)
 and [PHITS](https://phits.jaea.go.jp/), and analysis of the results of calculations,
 for this purpose I use Python. I also have skills to work with
@@ -42,6 +42,6 @@ approaches and develop new models that describe actual problem. After long and
 persistent reflections and attempts to solve the problem, a solution comes.
 
 If you have any additional questions, please feel free to contact me by email
-or on the social network. 
+or on the social network!
 
 <img src="https://gordeev.page/images/credo.png" width="100%" />
