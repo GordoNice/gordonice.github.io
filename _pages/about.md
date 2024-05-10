@@ -10,9 +10,9 @@ redirect_from:
 
 ## About me
 
-I'm a researcher at the [JINR](http://www.jinr.ru/main-en/)
-[Laboratory of Radiation Biology (LRB)](http://lrb.jinr.ru/index.php/en/), I'm in
-the Radiation Research Department of the base facilities. Also, I'm a postgraduate
+I'm a researcher at the Department of Radiation Research of the basic facilities
+at the [Laboratory of Radiation Biology (LRB)](http://lrb.jinr.ru/index.php/en/) at the [JINR](http://www.jinr.ru/main-en/).
+Also, I'm a postgraduate
 student of [Dubna State University](https://int.uni-dubna.ru/) with major in physics and astronomy.
 
 On this website you can find comprehensive information about me:
