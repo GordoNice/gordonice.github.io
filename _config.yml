@@ -84,7 +84,7 @@ analytics:
 author:
   name             : "Ivan Gordeev"
   avatar           : "profile.jpg"
-  bio              : "Researcher at the JINR LRB. Postgraduate student of Dubna State University"
+  bio              : "Researcher at the JINR LRB"
   location         : "Dubna, Russia"
 #  employer         : "Joint Institute for Nuclear Research"
 #  pubmed           :
@@ -95,14 +95,14 @@ author:
 #  bitbucket        :
 #  codepen          :
 #  dribbble         :
-  flickr           :
-  facebook         : "gnowar"
+#  flickr           :
+#  facebook         :
 #  vk               :
 #  foursquare       :
   github           : "GordoNice"
 #  google_plus      :
 #  keybase          :
-  instagram        : "g_iii_n"
+#  instagram        :
 #  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
 #  lastfm           :
 #  linkedin         :
@@ -112,7 +112,7 @@ author:
 #  stackoverflow    : # http://stackoverflow.com/users/123456/username
 #  steam            :
 #  tumblr           :
-  twitter          : "Ivan34706278"
+#  twitter          :
 #  vine             :
 #  weibo            :
 #  xing             :
