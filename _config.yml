@@ -84,7 +84,7 @@ analytics:
 author:
   name             : "Ivan Gordeev"
   avatar           : "profile.jpg"
-  bio              : "PhD. Researcher at the JINR LRB"
+  bio              : "PhD, Researcher at the JINR LRB"
   location         : "Dubna, Russia"
 #  employer         : "Joint Institute for Nuclear Research"
 #  pubmed           :
@@ -116,7 +116,7 @@ author:
 #  vine             :
 #  weibo            :
 #  xing             :
-  youtube          :
+#  youtube          :
 #  wikipedia        :
 
 # Reading Files
