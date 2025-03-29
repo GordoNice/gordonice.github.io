@@ -43,6 +43,9 @@
       {% if author.scopus %}
         <li><a href="{{ author.scopus }}"><i class="ai ai-scopus-square ai-fw"></i> Scopus</a></li>
       {% endif %}
+      {% if author.clarivate %}
+        <li><a href="{{ author.clarivate }}"><i class="ai ai-clarivate-square ai-fw"></i> Web of Science</a></li>
+      {% endif %}
       {% if author.researchgate %}
         <li><a href="{{ author.researchgate }}"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
       {% endif %}
